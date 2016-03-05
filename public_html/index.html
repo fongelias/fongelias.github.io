@@ -1,0 +1,79 @@
+<!-- recall structure: <element attribute="value"> -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--This is where you put information about the page-->
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<!--This ensures proper rendering-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags (for bootstrap)-->
+		<title>
+			Journey
+		</title>
+		<!-- Latest compiled and minified CSS for bootstrap -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--jQuery UI-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<!-- Latest compiled JavaScript for bootstrap-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!--Link to your specific js and CSS sheets here!-->
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js"></script>
+		<!--Link to font here-->
+		<link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400' rel='stylesheet' type='text/css'>
+		<!--SEO package-->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel="canonical" href="/">
+		<!--Page begins here-->
+	</head>
+	<body>
+		<header class="container-fluid" id="title-card">
+			<div class="row">
+				<div class="col-xs-12" style="text-align: center">
+					<a href="/" id="title-text" class="fade-entry">Journey</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="fade-entry-delay" style="text-align: center" id="title-caption">Tell the story of your life one day at a time</h1>
+				</div>
+			</div>
+		</header>
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+
+					<div class="row">
+						<h1 class="append-current-date col-xs-10 col-xs-offset-1 fade-entry-delay" id="date-text">Write for </h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<div class="fade-entry-delay click-empty" id="new-entry" contenteditable="true" tabindex="1">Today, I...</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="sign-up-form" class="form-inline col-xs-10 col-xs-offset-1 fade-entry-delay">
+							<div class="form-group">
+								<input id="email" type="email" name="email" placeholder="email" tabindex="2">
+							</div>
+							<div class="form-group">
+								<input id="password" type="password" name="password" placeholder="password" tabindex="3">
+							</div>
+							<div class="form-group">
+								<input id="save-button" class="pulse" value="save" id="login-text" type="submit" tabindex="4">
+							</div>
+							<div class="form-group">
+								<label id="form-prompt"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

@@ -8,8 +8,6 @@ $(document).ready(function(){
 	function checkWidth() {
 		var windowsize = $(window).width();
 		if (windowsize > 837) {
-			hideExpandedNav();
-			hideDropDownNav();
 		};
 	};
 	//Execute on load
@@ -19,7 +17,5 @@ $(document).ready(function(){
 
 	/* ----------------Window scroll detection-----------*/
 	$(window).on("scroll", function() {
-		hideDropDownFilterMenu();
-		hideDropDownNav();
 	});
 });

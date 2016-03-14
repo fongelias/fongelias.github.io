@@ -12,6 +12,7 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
     display: block;
 }
 
@@ -188,17 +189,111 @@ ul {
 
 /* ------------------------Briefcase------------------------*/
 .briefcase {
+	background-color: #818a9c;
+	width: 4rem;
+	height: 4rem;
+}
 
+.briefcase::before {
+	content: "";
+	display: inline-block;
+	border-top: 2px solid #95392B;
+	border-left: 2px solid #95392B;
+	border-right: 2px solid #95392B;
+	width: 0.8rem;
+	height: 1rem;
+	border-radius: 0.4rem 0.4rem;
+	position: relative;
+	top: 1rem;
+	left: 0.3rem;
 }
 
 .briefcase-2 {
+	background-color: #95392B;
+	width: 1.7rem;
+	height: 1.8rem;
+}
 
+.briefcase-2::before {
+	content: "";
+	display: inline-block;
+	background-color: #95392B;
+	width: 0.5rem;
+	height: 1.8rem;
+	border-radius: 0.4rem 0rem 0rem 0.4rem;
+	position: relative;
+	left: -0.7rem;
+}
+
+.briefcase-2::after {
+	content: "";
+	display: inline-block;
+	background-color: #95392B;
+	width: 0.5rem;
+	height: 1.8rem;
+	border-radius: 0rem 0.4rem 0.4rem 0rem;
+	position: relative;
+	left: 1.4rem;
 }
 
 
 .briefcase-3 {
-
+	background-color: #7E3125;
+	width: calc(1.7rem + 0.2rem + 0.2rem + 0.5rem + 0.5rem);
+	height: 0.4rem;
+	border-radius: 0.4rem 0.4rem 0rem 0rem;
+	position: relative;
+	left:-0.7rem;
+	top: -1.8rem;
+	opacity: 0;
+	/*animation*/
+	transition-timing-function: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	transition: all 1s;
 }
+
+.briefcase-3::after {
+	content: "";
+	display: inline-block;
+	background-color: #59221A;
+	width: calc(1.7rem + 0.2rem + 0.2rem + 0.5rem + 0.5rem);
+	height: 0.1rem;
+	position: relative;
+	top: -0.5rem;
+	opacity: 0;
+	/*animation*/
+	transition-timing-function: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	transition: all 1s;
+}
+
+/*.briefcase-contents {
+	content: "";
+	display: inline-block;
+	background-color: white;
+	width: 1.4rem;
+	height: 1rem;
+	position: absolute;
+	top: 2.5rem;
+	left: 6.9rem;
+	opacity: 1;
+	/*animation*/
+	/*transition-timing-function: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	/*transition: all 1s;
+}*/
+
+#experience-nav:hover .briefcase-3 {
+	height: 1.4rem;
+	opacity: 1;
+}
+
+#experience-nav:hover .briefcase-3::after {
+	height: 0.3rem;
+    top:0.5rem;
+    opacity: 1;
+}
+
 /* ########################Reusable Formats############################################### */
 /* ------------------------Flex Box------------------------*/
 .flex-box {

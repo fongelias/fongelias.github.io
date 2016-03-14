@@ -189,7 +189,6 @@ ul {
 
 /* ------------------------Briefcase------------------------*/
 .briefcase {
-	background-color: #818a9c;
 	width: 4rem;
 	height: 4rem;
 }
@@ -349,7 +348,6 @@ nav {
 	top: 0;
 	left: 0;
 	z-index: 2;
-	background-color: white;
 	opacity: 1;
 	height: 100vh;
 	max-width: 7rem;
@@ -374,6 +372,14 @@ ul {
 .nav-item {
 	height: 6rem;
 	width: 6rem;
+	/*animation*/
+	transition-timing-function: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	transition: all 1s;
+}
+
+.nav-item:hover {
+	background-color: white;
 }
 
 nav a {
@@ -385,6 +391,7 @@ nav a {
 
 nav a:hover span {
 	color: blue;
+	opacity: 1;
 }
 
 nav a:visited span {
@@ -392,9 +399,15 @@ nav a:visited span {
 }
 
 nav span {
-	display: none;
+	position: relative;
+	opacity: 0;
+	/*animation*/
+	transition-timing-function: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	transition: all 1s;
 }
 
+/* ------------------------Projects Nav------------------------*/
 #nav-light-bulb {
 	position: relative;
 	top: calc((100% - 3rem) * 0.55);
@@ -406,8 +419,29 @@ nav span {
 	top: 2rem;
 	left: 5rem;*/
 	position: relative;
+	opacity: 0;
 	top:-1rem;
 	left: 4rem;
+}
+
+#projects-nav:hover .light-bulb {
+
+}
+
+#projects-nav:hover #nav-spark {
+	opacity: 1;
+}
+
+/* ------------------------Experience Nav------------------------*/
+#nav-briefcase {
+	position: relative;
+	top: calc((100% - 4rem) * 0.55);
+	left: calc((100% - 1.5rem) * 0.50);
+}
+
+#experience-nav span {
+	top: -1.3rem;
+	left: 0.5rem;
 }
 
 /* ########################Title Card############################################### */

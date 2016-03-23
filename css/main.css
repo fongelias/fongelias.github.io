@@ -295,7 +295,47 @@ ul {
 }
 
 /* ------------------------Speech Bubble------------------------*/
-.speech-bubble{}
+.speech-bubble {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 100%;
+	background-color: red ;
+}
+
+.speech-bubble::before {
+	display: inline-block;
+	content: "";
+	height: 1.5rem;
+	width: 1.5rem;
+	background-color: red;
+	position: relative;
+	top: 1.5rem;
+}
+
+.letter-i {
+	display: inline-block;
+	height: 1.5rem;
+	width: 0.5rem;
+	background-color: green;
+	position: relative;
+	top:-1.8rem;
+	left: 1.3rem;
+}
+
+.letter-i::after {
+	display: inline-block;
+	content: "";
+	height: 0.5rem;
+	width: 0.5rem;
+	background-color: blue;
+	position: relative;
+	top: -1.3rem;
+}
+
+#about-nav-icon {
+	display: inline-block;
+	position: relative;
+}
 
 /* ########################Reusable Formats############################################### */
 /* ------------------------Flex Box------------------------*/
@@ -312,6 +352,7 @@ ul {
 	justify-content: flex-start;
 	align-items: center;
 }
+
 
 @media (max-width: 545px) {
 	.flex-alt {

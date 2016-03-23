@@ -188,6 +188,7 @@ ul {
 }
 
 /* ------------------------Briefcase------------------------*/
+/*Consider doing briefcase as a simple square with handle, may help ease animation*/
 .briefcase {
 	width: 4rem;
 	height: 4rem;
@@ -292,6 +293,9 @@ ul {
     top:0.5rem;
     opacity: 1;
 }
+
+/* ------------------------Speech Bubble------------------------*/
+.speech-bubble{}
 
 /* ########################Reusable Formats############################################### */
 /* ------------------------Flex Box------------------------*/

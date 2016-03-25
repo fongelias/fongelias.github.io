@@ -296,44 +296,89 @@ ul {
 
 /* ------------------------Speech Bubble------------------------*/
 .speech-bubble {
-	height: 3rem;
-	width: 3rem;
+	height: 2.6rem;
+	width: 2.6rem;
 	border-radius: 100%;
-	background-color: red ;
+	background-color: #7f7fff;
 }
 
 .speech-bubble::before {
 	display: inline-block;
 	content: "";
-	height: 1.5rem;
-	width: 1.5rem;
-	background-color: red;
+	height: 1.3rem;
+	width: 1.3rem;
+	background-color: #7f7fff;
 	position: relative;
-	top: 1.5rem;
+	top: 1rem;
+	left: 0.7rem;
+	/* move to top:1.3rem; on hover */
 }
 
-.letter-i {
+.letter-i-bottom {
 	display: inline-block;
-	height: 1.5rem;
+	height: 1.2rem;
 	width: 0.5rem;
-	background-color: green;
+	border-radius: 0.1rem;
+	background-color: white;
 	position: relative;
-	top:-1.8rem;
-	left: 1.3rem;
+	top: -1.5rem;
+	left: 0.3rem;
 }
 
-.letter-i::after {
+.letter-i-top {
 	display: inline-block;
 	content: "";
 	height: 0.5rem;
 	width: 0.5rem;
-	background-color: blue;
+	border-radius: 100%;
+	background-color: white;
 	position: relative;
-	top: -1.3rem;
+	top: -2.9rem;
+	left: 1.05rem;
 }
 
-#about-nav-icon {
+/* ------------------------Envelope------------------------*/
+.envelope-1 {
+	height: 2rem;
+	width: 3rem;
+	background-color: #d7fadd;
+}
+
+.envelope-1::after{
 	display: inline-block;
+	content: "";
+	display: inline-block;
+	border-bottom:  10px solid transparent;
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+	border-top: 15px solid #f1fdf3;
+	position: relative;
+}
+
+/* Use this to animate opening letter effect */
+#contact-nav:hover .envelope-2 {
+	-webkit-transform: rotateX(160deg); /* Safari */
+    transform: rotateX(160deg);
+	/*animation*/
+	transition-timing-function: all 1.3s;
+	-webkit-transition: all 1.3s; /* Safari */
+	transition: all 1.3s;
+}
+
+.envelope-2 {
+	height: 2rem;
+	width: 2rem;
+	position: relative;
+	top:-3rem;
+}
+
+.envelope-3 {
+	margin-top: 1rem;
+	display: inline-block;
+	border-bottom:  10px solid transparent;
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+	border-top: 20px solid #94f3d3;
 	position: relative;
 }
 
@@ -357,6 +402,7 @@ ul {
 @media (max-width: 545px) {
 	.flex-alt {
 		flex-direction: row;
+		justify-content: center;
 	}
 }
 
@@ -386,6 +432,7 @@ ul {
     	top: -0.5rem;
     }
 }
+
 
 /* ########################Nav###################################################### */
 nav {
@@ -455,7 +502,7 @@ nav span {
 /* ------------------------Projects Nav------------------------*/
 #nav-light-bulb {
 	position: relative;
-	top: calc((100% - 3rem) * 0.55);
+	top: calc((100% - 4rem) * 0.55);
 	left: calc((100% - 2rem) * 0.50);
 }
 
@@ -477,16 +524,54 @@ nav span {
 	opacity: 1;
 }
 
+#projects-nav span {
+	top: 2.3rem;
+}
+
 /* ------------------------Experience Nav------------------------*/
 #nav-briefcase {
 	position: relative;
-	top: calc((100% - 4rem) * 0.55);
+	top: calc((100% - 5.5rem) * 0.55);
 	left: calc((100% - 1.5rem) * 0.50);
 }
 
 #experience-nav span {
-	top: -1.3rem;
+	top: 0.3rem;
 	left: 0.5rem;
+}
+
+/* ------------------------About Nav-----------------------------*/
+#about-nav-icon {
+	display: inline-block;
+	position: relative;
+	top: calc((100% - 4rem) * 0.55);
+	left: calc((100% - 2.5rem) * 0.50);
+}
+
+#about-nav:hover .speech-bubble::before {
+	top: 1.3rem;
+	left: 0rem;
+	/*animation*/
+	transition-timing-function: all 0.3s;
+	-webkit-transition: all 0.3s; /* Safari */
+	transition: all 0.3s;
+}
+
+#about-nav span {
+	top: 1.6rem;
+	left: -1.4rem;
+}
+
+/* ------------------------About Nav-----------------------------*/
+#contact-nav-icon {
+	position: relative;
+	top: calc((100% - 3rem) * 0.55);
+	left: calc((100% - 3rem) * 0.50);
+}
+
+#contact-nav span {
+	top: 0.3rem;
+	left: 1.2rem;
 }
 
 /* ########################Title Card############################################### */

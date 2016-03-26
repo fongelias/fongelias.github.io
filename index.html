@@ -28,7 +28,17 @@
 		<nav>
 			<ul class="flex-alt">
 				<li class="nav-item">
-					<a href="" id="projects-nav">
+					<a href="" id="about-nav">
+						<div id="about-nav-icon">
+							<div class="speech-bubble" id="nav-speech-bubble"></div>
+							<div class="letter-i-top"></div>
+							<div class="letter-i-bottom"></div>
+						</div>
+						<span>About</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#projects-card" id="projects-nav">
 						<div class="light-bulb" id="nav-light-bulb">
 							<div class="light-bulb-2"></div>
 						</div>
@@ -44,21 +54,11 @@
 						<div class="briefcase" id="nav-briefcase">
 							<div class="briefcase-2"></div>
 							<div class="briefcase-3">
-									<div></div>
+								<div></div>
 							</div>
 							<!--div class="briefcase-contents"></div-->
 						</div>
 						<span>Experience</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="" id="about-nav">
-						<div id="about-nav-icon">
-							<div class="speech-bubble" id="nav-speech-bubble"></div>
-							<div class="letter-i-top"></div>
-							<div class="letter-i-bottom"></div>
-						</div>
-						<span>About</span>
 					</a>
 				</li>
 				<li class="nav-item">
@@ -88,12 +88,30 @@
 				</div>
 			</div>
 		</header>
-		<section id="title-card">
+		<section id="about-card" class="flex-box card">
+			<div class="flex-nav-spacer"></div>
+			<div class="card-content">
+				<img class="card-title-image" src="img/about_text.png" alt="about"/>
+				<div id="design-illustration">
+					<div class="gooey-container illustration-flex-container">
+						<div class="circle merge-1"></div>
+						<div class="merge-area"></div>
+						<div class="circle merge-2"></div>
+					</div>
+					<div class="illustration-flex-container" id="design-illustration-box-2">
+						<div class="illustration-text show-text-1">Simple Form</div>
+						<div class="illustration-text show-text-2">Good Design</div>
+						<div class="illustration-text show-text-1">High Functionality</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 		  <defs>
-		    <filter id="blur">
-		      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+		    <filter id="goo">
+		    	<feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur" />
+      			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+    			<feBlend in="SourceGraphic" in2="goo" />
 		    </filter>
 		  </defs>
 		</svg>

@@ -71,6 +71,20 @@ svg {
 	-moz-transform: translateY(0) translateX(0) rotate(135deg);
 }
 
+.chevron-right {
+	left: 0.1rem;
+	position: relative;
+	content: " ";
+	display: inline-block;
+	height: 0.5rem;
+	width: 0.5rem;
+	border-top: 0.2rem solid black;
+	border-right: 0.2rem solid black;
+	transform: translateY(0) translateX(0) rotate(45deg);
+	-webkit-transform: translateY(0) translateX(0) rotate(45deg);
+	-moz-transform: translateY(0) translateX(0) rotate(45deg);
+}
+
 .chevron-container:hover .chevron-down {
 	border-top: 0.2rem solid #d7d7d7;
 	border-right: 0.2rem solid #d7d7d7;
@@ -370,6 +384,11 @@ svg {
 	}
 }
 
+/* ------------------------Gooey Filter----------------------*/
+.gooey-container {
+	-webkit-filter: url(#goo);
+	filter: url(#goo);
+}
 /* ########################Animations############################################### */
 /* ------------------------Bounce------------------------*/
 .bounce {
@@ -549,6 +568,28 @@ svg {
     }
 }
 
+/* ------------------------Type Text------------------------*/
+/* Requires one class per differently sized text */
+.css-typing{
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+/* Chrome, Safari, Opera */ 
+@keyframes type{
+    from { 
+    	width: 0rem;
+    }
+}
+
+/* Standard syntax */ 
+@-webkit-keyframes type{
+    from {
+    	width: 0rem;
+    }
+}
 
 /* ########################Nav###################################################### */
 nav {
@@ -719,6 +760,9 @@ nav span {
 		height: calc(100% - 6rem);
 		width: 100%;
 	}
+	.flex-nav-spacer {
+		display: none;
+	}
 }
 
 /* ########################Title Card############################################### */
@@ -801,10 +845,15 @@ nav span {
 	display: inline-block;
 }
 
-.gooey-container {
-	-webkit-filter: url(#goo);
-	filter: url(#goo);
+#process-illustration {
+	display: flex;
+
 }
+
+.illustration-chevron-container {
+	display: inline-block;
+}
+
 
 
 

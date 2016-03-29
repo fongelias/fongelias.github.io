@@ -591,7 +591,7 @@ svg {
     }
 }
 
-/* ########################Nav###################################################### */
+/* ########################Navs###################################################### */
 nav {
 	position: fixed;
 	top: 0;
@@ -732,6 +732,108 @@ nav span {
 	left: 1.2rem;
 }
 
+/* ------------------------Side Nav-----------------------------*/
+#side-nav {
+	z-index: 150;
+	position: absolute;
+	top: 0rem;
+}
+
+/* ------------------------Nav Burger-----------------------------*/
+#nav-burger {
+	height: 1.5rem;
+	width: 3rem;
+	position: relative;
+	display: inline-block;
+	margin: 2.1rem;
+	float: right;
+}
+
+#nav-burger::before {
+	content: "";
+	display: inline-block;
+	background-color: #303258;
+	height: 7.1rem;
+	width: 9.2rem;
+	position: absolute;
+	top: calc((7.1rem - 3rem) / 2 * -1 - 0.3rem);
+	left: calc((8rem - 2.4rem) / 2 * -1 + 0.2rem);
+	opacity: 0;
+	/*animation*/
+	transition-timing-function: all ease-in-out;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+#nav-burger .line {
+	display: block;
+	background: #ecf0f1;
+	width: 2rem;
+	height: 0.3rem;
+	position: absolute;
+	left: 0;
+	border-radius: 0.4rem;
+	/*animation*/
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+#nav-burger .line.line-1 {
+	top: 0;
+}
+
+#nav-burger .line.line-2 {
+	top: 50%;
+}
+
+#nav-burger .line.line-3 {
+	top: 100%;
+}
+
+#nav-burger:hover .line-1 {
+	transform: translateY(-0.3rem);
+	-webkit-transform: translateY(-0.3rem);
+	-moz-transform: translateY(-0.3rem);
+}
+
+#nav-burger:hover .line-3 {
+	transform: translateY(0.3rem);
+	-webkit-transform: translateY(0.3rem);
+	-moz-transform: translateY(0.3rem);
+}
+	/* ++++++++++++Javacript Applied Classes+++*/
+	.active-side-nav #nav-burger::before {
+		opacity: 1;
+		/*animation*/
+		transition-timing-function: all ease-in-out;
+		-webkit-transition: all 0.3s; /* Safari */
+	    transition: all 0.3s;
+	}
+
+	.active-side-nav #side-nav-container {
+		right: 0rem;
+		/*animation*/
+		transition-timing-function: all ease-in-out;
+		-webkit-transition: all 0.3s; /* Safari */
+	    transition: all 0.3s;
+	}
+
+	#nav-burger.active .line-1 {
+		transform: translateY(1.2rem) translateX(0) rotate(45deg);
+		-webkit-transform: translateY(1.2rem) translateX(0) rotate(45deg);
+		-moz-transform: translateY(1.2rem) translateX(0) rotate(45deg);
+	}
+
+	#nav-burger.active .line-2 {
+		opacity: 0;
+	}
+
+	#nav-burger.active .line-3 {
+		transform: translateY(-1.2rem) translateX(0) rotate(-45deg);
+		-webkit-transform: translateY(-1.2rem) translateX(0) rotate(-45deg);
+		-moz-transform: translateY(-1.2rem) translateX(0) rotate(-45deg);
+	}
 /* ########################Card Formats############################################### */
 .card {
 	min-height: calc(100vh - 1rem);

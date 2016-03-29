@@ -1,6 +1,16 @@
 $(document).ready(function(){
 	/* ########################Reused Objects below######################################### */
-	/* ----------------Add Button----------------------*/
+	/* ########################Specific Objects below####################################### */
+	/* ----------------Side Nav----------------------*/
+	var hamburger = $('#nav-burger');
+	var body = $("body");
+
+	//Hamburger to expanded nav
+	hamburger.click(function() {
+		hamburger.toggleClass('active');
+		body.toggleClass('active-side-nav');
+		//return false;
+	});
 
 	/* ########################Reused Event Listeners below################################# */
 	/* ----------------Window width detection-----------*/

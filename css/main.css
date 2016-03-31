@@ -801,24 +801,17 @@ nav span {
 	position: absolute;
 	left: calc(50vw - 3rem);
 	top: calc(50vh - 12rem);
-	opacity: 0;
-	/*animation*/
-	transition-timing-function: all ease-in-out;
-	-webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+	display: none;
 }
 
 	/* ++++++++++++Javacript Applied Classes+++*/
 	.active-side-nav #side-nav-options-container {
-		opacity: 1;
-		/*animation*/
-		transition-timing-function: all ease-in-out;
-		-webkit-transition: all 0.3s; /* Safari */
-	    transition: all 0.3s;
+		display: inline-block;
 	}
 
 /* ------------------------Side Nav Item-----------------------------*/
 .side-nav-item {
+	opacity: 0;
 	height: 6rem;
 	width: 6rem;
 	/*animation*/
@@ -851,6 +844,15 @@ nav span {
 	-webkit-transition: all 1s; /* Safari */
 	transition: all 1s;
 }
+
+	/* ++++++++++++Javacript Applied Classes+++*/
+	.active-side-nav .side-nav-item {
+		opacity: 1;
+		/*animation*/
+		transition-timing-function: all 1s;
+		-webkit-transition: all 1s; /* Safari */
+		transition: all 1s;
+	}
 
 /* ------------------------Nav Burger-----------------------------*/
 #nav-burger {
@@ -1040,6 +1042,15 @@ nav span {
 
 .illustration-chevron-container {
 	display: inline-block;
+}
+
+/* ########################Projects Card########################################### */
+#projects-card {
+	background-color: #ccd7e2;
+}
+
+#projects-title-image {
+	height: calc(8vw * 323.1 / 216);
 }
 
 

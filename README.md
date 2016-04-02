@@ -11,3 +11,9 @@ To Do list:
 -Define Project Page
 
 -Develop About Script
+
+-idea! main page will be somewhere in the sky. clouds and birds.
+
+-about will be underground
+
+projects will be in different clouds

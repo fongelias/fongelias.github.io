@@ -568,6 +568,41 @@ svg {
     }
 }
 
+/* ------------------------Rotate------------------------*/
+.rotate-180 {
+	-webkit-animation: rotate180 40s ease-in-out infinite; /* Chrome, Safari, Opera */
+	animation: rotate180 40s ease-in-out infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes rotate180 {
+    from {
+    	transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+    }
+    to {
+    	transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes rotate180 {
+    from {
+    	transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+    }
+    to {
+    	transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+    }
+}
+
+
 /* ------------------------Type Text------------------------*/
 /* Requires one class per differently sized text */
 .css-typing{
@@ -927,6 +962,7 @@ nav span {
 .card {
 	min-height: calc(100vh - 1rem);
 	margin: 1rem 1rem 0rem 1rem;
+	position: relative;
 	/*for flex-box class*/
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -944,6 +980,8 @@ nav span {
 .card-content {
 	height: 100%;
 	width: calc(100% - 6rem);
+	padding-left: 6rem;
+	position: absolute;
 }
 
 @media (max-width: 545px) {
@@ -959,7 +997,7 @@ nav span {
 #title-card {
 	height: calc(100vh - 2rem);
 	margin: 1rem 1rem 1rem 1rem;
-	background-color: #ccd7e2;
+	background-color: #c0dfff;
 }
 
 #title-content {
@@ -979,10 +1017,6 @@ nav span {
 	height: 8vw;
 }
 
-#title-divider {
-	margin: 0.7rem auto 0rem auto;
-}
-
 #title-content h2 {
 	margin: 0.7rem auto 0rem auto;
 	font-size: 1rem;
@@ -991,7 +1025,206 @@ nav span {
 
 #title-chevron {
 	position: relative;
-	top: calc(100% - (8vw + 0.7rem + 3.2rem + 2.2rem + 0.7rem) - 2rem);
+	top: 40vh;
+}
+
+/* -----------------------Cloud Area-----------------------------*/
+.cloud-container {
+	overflow: hidden;
+	height: calc((100vh - 2rem) * 0.7 - 8vw - 0.7rem - 1.375rem);
+	width: 100%;
+	position: absolute;
+	bottom: 0rem;
+}
+
+.sun-container {
+	display: inline-block;
+	height: 5rem;
+	width: 100%;
+	position: absolute;
+	left: 0rem;
+	bottom: 5rem;
+	/*animation*/
+	transition: all 4s;
+	-webkit-transition: all 4s;
+	-moz-transition: all 4s;
+}
+
+.sun {
+	background-color: #ffe0c0;
+	border-radius: 100%;
+	display: inline-block;
+	float: right;
+	height: 5rem;
+	width: 5rem;
+}
+
+.cloud {
+	background-color: #f7f7ec;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.cloud-1 {
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 13rem;
+}
+
+.cloud-2 {
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 3rem;
+}
+
+.cloud-3 {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 10rem;
+}
+
+.cloud-4 {
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 17rem;
+}
+
+.cloud-5 {
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 21rem;
+}
+
+.cloud-6 {
+	height: 4rem;
+	width: 4rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 6rem;
+}
+
+.cloud-7 {
+	height: 7rem;
+	width: 7rem;
+	position: absolute;
+	bottom: 6rem;
+	left: -3rem;
+}
+
+.cloud-8 {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 11.5rem;
+}
+
+.cloud-9 {
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 27.5rem;
+}
+
+.cloud-10 {
+	height: 4rem;
+	width: 4rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 34.5rem;
+}
+
+.cloud-11 {
+	height: 7rem;
+	width: 7rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 29.5rem;
+}
+
+.cloud-12 {
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	bottom: 4.5rem;
+	left: 24.5rem;
+}
+
+.cloud-13 {
+	height: 2rem;
+	width: 2rem;
+	position: absolute;
+	bottom: 7rem;
+	left: 37.5rem;
+}
+
+.cloud-14 {
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 51.5rem;
+}
+
+.cloud-15 {
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	bottom: 5.5rem;
+	left: 57.5rem;
+}
+
+.cloud-16 {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 55.5rem;
+}
+
+.cloud-17 {
+	height: 7rem;
+	width: 7rem;
+	position: absolute;
+	bottom: 5.5rem;
+	left: 39.5rem;
+}
+
+.cloud-18 {
+	height: 8rem;
+	width: 8rem;
+	position: absolute;
+	bottom: 5.5rem;
+	left: 45.5rem;
+}
+
+.cloud-19 {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	bottom: 6rem;
+	left: 61.5rem;
+}
+
+.cloud-bottom {
+	background-color: #f7f7ec;
+	display: inline-block;
+	position: absolute;
+	bottom: 0rem;
+	left: 0rem;
+	height: 8rem;
+	width: 100%;
 }
 
 /* ########################About Card########################################### */
@@ -1051,6 +1284,67 @@ nav span {
 
 #projects-title-image {
 	height: calc(8vw * 323.1 / 216);
+}
+
+#project-titles-container {}
+
+/* -----------------------Project Title Objects-----------------------------*/
+
+#projects-title-image {
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
+.project-title {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+#projects-card h2 {
+	font-weight: 300;
+	font-size: 2rem;
+	display: block;
+}
+
+.project-title h2::after {
+	content: "";
+	display: block;
+	position: relative;
+	left: -0.2rem;
+	background-color: black;
+	width: 7rem;
+	height: 0.2rem;
+}
+
+.project-title h2::before {
+	content: "";
+	display: block;
+	position: relative;
+	left: 7.2rem;
+	top: 2.1rem;
+	width: 0.5rem; /* 0 */
+	height: 0.5rem; /* 1.5 */
+	border-right: 0.2rem solid black;
+	border-top: 0.2rem solid black;
+	transform: translateY(0) translateX(0) rotate(45deg);
+	-webkit-transform: translateY(0) translateX(0) rotate(45deg);
+	-moz-transform: translateY(0) translateX(0) rotate(45deg);
+}
+
+#cloud-middle {
+	position: absolute;
+	top: 0rem;
+	height: 3rem;
+	width: 100%;
+	border-radius: 0%;
+}
+
+#cloud-under {
+	top:3rem;
+	transform: translateY(0) translateX(0) rotate(180deg);
+	-webkit-transform: translateY(0) translateX(0) rotate(180deg);
+	-moz-transform: translateY(0) translateX(0) rotate(180deg);
 }
 
 

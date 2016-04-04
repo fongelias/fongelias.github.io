@@ -602,6 +602,40 @@ svg {
     }
 }
 
+/* ------------------------Scale------------------------*/
+.rotate-180 {
+	-webkit-animation: rotate180 40s ease-in-out infinite; /* Chrome, Safari, Opera */
+	animation: rotate180 40s ease-in-out infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes rotate180 {
+    from {
+    	transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+    }
+    to {
+    	transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes rotate180 {
+    from {
+    	transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+    }
+    to {
+    	transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-webkit-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+		-moz-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+    }
+}
+
 
 /* ------------------------Type Text------------------------*/
 /* Requires one class per differently sized text */
@@ -1008,6 +1042,7 @@ nav span {
 }
 
 #title-content h1 {
+	position: relative;
 	margin: auto;
 	height: 8vw;
 }
@@ -1279,24 +1314,28 @@ nav span {
 
 /* ########################Projects Card########################################### */
 #projects-card {
-	background-color: #ccd7e2;
+	background-color: #ffbbcc;
+	position: relative;
 }
 
 #projects-title-image {
 	height: calc(8vw * 323.1 / 216);
 }
 
-#project-titles-container {}
+#project-titles-container {
+	height: calc(100% - (8vw * 323.1 / 216) - 3rem);
+	width: 100%;
+}
 
 /* -----------------------Project Title Objects-----------------------------*/
 
 #projects-title-image {
 	margin-top: 3rem;
-	margin-bottom: 4rem;
+	margin-bottom: 0rem;
 }
 
 .project-title {
-	display: block;
+	display: inline-block;
 	color: black;
 	text-decoration: none;
 }
@@ -1305,9 +1344,10 @@ nav span {
 	font-weight: 300;
 	font-size: 2rem;
 	display: block;
+	position: absolute;
 }
 
-.project-title h2::after {
+/*.project-title h2::after {
 	content: "";
 	display: block;
 	position: relative;
@@ -1324,29 +1364,50 @@ nav span {
 	left: 7.2rem;
 	top: 2.1rem;
 	width: 0.5rem; /* 0 */
-	height: 0.5rem; /* 1.5 */
-	border-right: 0.2rem solid black;
+	/*height: 0.5rem; /* 1.5 */
+	/*border-right: 0.2rem solid black;
 	border-top: 0.2rem solid black;
 	transform: translateY(0) translateX(0) rotate(45deg);
 	-webkit-transform: translateY(0) translateX(0) rotate(45deg);
 	-moz-transform: translateY(0) translateX(0) rotate(45deg);
-}
+}*/
 
-#cloud-middle {
+#cloud-gradient {
 	position: absolute;
 	top: 0rem;
-	height: 3rem;
+	height: 20vh;
 	width: 100%;
-	border-radius: 0%;
+	background: -webkit-linear-gradient(rgba(247,247,236,1), rgba(247,247,236,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(247,247,236,1), rgba(247,247,236,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(247,247,236,1), rgba(247,247,236,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(247,247,236,1), rgba(247,247,236,0)); /* Standard syntax */
 }
 
-#cloud-under {
-	top:3rem;
-	transform: translateY(0) translateX(0) rotate(180deg);
-	-webkit-transform: translateY(0) translateX(0) rotate(180deg);
-	-moz-transform: translateY(0) translateX(0) rotate(180deg);
+#journey-title {
+	position: absolute;
 }
 
+.cloud-wide {
+	height: 3rem;
+	width: 12rem;
+	border-radius: 5rem 5rem 5rem 5rem;
+	position: absolute;
+	display: inline-block;
+
+}
+
+.cloud-peak {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	top: 0rem;
+}
+
+.cloud-bump {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+}
 
 
 

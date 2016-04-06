@@ -13,12 +13,30 @@ $(document).ready(function(){
 		//return false;
 	});
 
-	//Click Hamburger to open Side nav
+	//Click Icon to close Side nav
 	sideNavButton.click(function() {
 		hamburger.toggleClass('active');
 		body.toggleClass('active-side-nav');
 		//return false;
 	});
+
+	/* ----------------Side Nav----------------------*/
+	var projectTitle = $('.project-title');
+	var body = $("body");
+
+	//Click Hamburger to open Side nav
+	projectTitle.click(function() {
+		//this.toggleClass('selected-project');
+		body.toggleClass('active-project');
+		//return false;
+	});
+
+	//Click Hamburger to open Side nav
+	//sideNavButton.click(function() {
+		//hamburger.toggleClass('active');
+		//body.toggleClass('active-side-nav');
+		//return false;
+	//});
 	/* ########################Reused Event Listeners below################################# */
 	/* ----------------Window width detection-----------*/
 	//Window width detection

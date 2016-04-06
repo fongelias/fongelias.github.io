@@ -997,6 +997,7 @@ nav span {
 	min-height: calc(100vh - 1rem);
 	margin: 1rem 1rem 0rem 1rem;
 	position: relative;
+	overflow: hidden;
 	/*for flex-box class*/
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -1320,12 +1321,22 @@ nav span {
 
 #projects-title-image {
 	height: calc(8vw * 323.1 / 216);
+	/*animation*/
+	transition-timing-function: all ease-in-out;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
 }
 
 #project-titles-container {
-	height: calc(100% - (8vw * 323.1 / 216) - 3rem);
+	height: calc(100% - (8vw * (323.1 / 216)) - 3.3rem);
 	width: 100%;
+	position: relative;
 }
+	
+	/* ++++++++++++Javacript Applied Classes+++*/
+	.active-project #projects-title-image {
+		opacity: 0;
+	}
 
 /* -----------------------Project Title Objects-----------------------------*/
 
@@ -1338,39 +1349,21 @@ nav span {
 	display: inline-block;
 	color: black;
 	text-decoration: none;
+	height: 8rem;
+	width: 12rem;
+	/*animation*/
+	transition-timing-function: all ease-in-out;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
 }
 
 #projects-card h2 {
 	font-weight: 300;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	display: block;
 	position: absolute;
+	margin: 0rem;
 }
-
-/*.project-title h2::after {
-	content: "";
-	display: block;
-	position: relative;
-	left: -0.2rem;
-	background-color: black;
-	width: 7rem;
-	height: 0.2rem;
-}
-
-.project-title h2::before {
-	content: "";
-	display: block;
-	position: relative;
-	left: 7.2rem;
-	top: 2.1rem;
-	width: 0.5rem; /* 0 */
-	/*height: 0.5rem; /* 1.5 */
-	/*border-right: 0.2rem solid black;
-	border-top: 0.2rem solid black;
-	transform: translateY(0) translateX(0) rotate(45deg);
-	-webkit-transform: translateY(0) translateX(0) rotate(45deg);
-	-moz-transform: translateY(0) translateX(0) rotate(45deg);
-}*/
 
 #cloud-gradient {
 	position: absolute;
@@ -1383,31 +1376,165 @@ nav span {
     background: linear-gradient(rgba(247,247,236,1), rgba(247,247,236,0)); /* Standard syntax */
 }
 
-#journey-title {
-	position: absolute;
+	/* ++++++++++++Javacript Applied Classes+++*/
+	.project-title.selected-project {
+		-ms-transform: scale(2.5); /* IE 9 */
+    	-webkit-transform: scale(2.5); /* Safari */
+    	transform: scale(2.5);
+    	top: -8vh;
+    	left: calc(((100% + 6rem) - (2.5 * 12rem)) / 2 + 1rem);
+	}
+
+/* -----------------------Rain Objects--------------------------------------*/
+.rain-container {
+	margin-top: 7.5rem;
+	margin-left: 1rem;
+	width: 10rem;
+	height: 0rem;
+	position: relative;
+	background-color: #9ae1e5;
+	background: -webkit-linear-gradient(rgba(154,225,229,1), rgba(154,225,229,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(154,225,229,1), rgba(154,225,229,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(154,225,229,1), rgba(154,225,229,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(154,225,229,1), rgba(154,225,229,0)); /* Standard syntax */
+	/*animation*/
+	transition-timing-function: all ease-in-out;
+	-webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
 }
 
-.cloud-wide {
+.rain-drop {
+	width: 0.3rem;
+	height: 1.2rem;
+	background-color: #6072af;
+	border-radius: 1rem 1rem 1rem 1rem;
+	position: absolute;
+	display: inline-block;
+	top: -1rem;
+}
+
+.rain-drop-1 {
+	left: 0.2rem;
+	/*animation*/
+	-webkit-transition-delay: 0s; /* Safari */
+    transition-delay: 0s;
+}
+
+.rain-drop-2 {
+	left: 5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.1s; /* Safari */
+    transition-delay: 0.1s;
+}
+
+.rain-drop-3 {
+	left: 8rem;
+	/*animation*/
+	-webkit-transition-delay: 0.2s; /* Safari */
+    transition-delay: 0.2s;
+}
+
+.rain-drop-4 {
+	left: 1.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.3s; /* Safari */
+    transition-delay: 0.3s;
+}
+
+.rain-drop-5 {
+	left: 9rem;
+	/*animation*/
+	-webkit-transition-delay: 0.4s; /* Safari */
+    transition-delay: 0.4s;
+}
+
+.rain-drop-6 {
+	left: 4rem;
+	/*animation*/
+	-webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
+}
+
+.rain-drop-7 {
+	left: 2rem;
+	/*animation*/
+	-webkit-transition-delay: 0.6s; /* Safari */
+    transition-delay: 0.6s;
+}
+
+.rain-drop-8 {
+	left: 7rem;
+	/*animation*/
+	-webkit-transition-delay: 0.7s; /* Safari */
+    transition-delay: 0.7s;
+}
+
+.rain-drop-9 {
+	left: 3rem;
+	/*animation*/
+	-webkit-transition-delay: 0s; /* Safari */
+    transition-delay: 0s;
+}
+
+.rain-drop-10 {
+	left: 8.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0s; /* Safari */
+    transition-delay: 0s;
+}
+
+.rain-drop-11 {
+	left: 5rem;
+	/*animation*/
+	-webkit-transition-delay: 0s; /* Safari */
+    transition-delay: 0s;
+}
+	
+	/* ++++++++++++Javacript Applied Classes+++*/
+	.selected-project .rain-container{
+		height: 20rem;
+	}
+
+	.selected-project .rain-drop {
+		/*top: 20rem;*/
+	}
+
+/* -----------------------Journey Title-------------------------------------*/
+#journey-title {
+	position: absolute;
+	margin-left: 2rem;
+}
+
+#journey-title h2 {
+	position: absolute;
+	bottom: 0.5rem;
+	left: 3.5rem;
+}
+
+#journey-title .cloud-wide {
 	height: 3rem;
 	width: 12rem;
 	border-radius: 5rem 5rem 5rem 5rem;
 	position: absolute;
-	display: inline-block;
-
+	bottom: 0rem;
 }
 
-.cloud-peak {
+#journey-title .cloud-peak {
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	bottom: 0rem;
+	left: 3rem;
+}
+
+#journey-title .cloud-bump {
 	height: 3rem;
 	width: 3rem;
 	position: absolute;
-	top: 0rem;
+	bottom: 1.5rem;
+	left: 2rem;
 }
 
-.cloud-bump {
-	height: 3rem;
-	width: 3rem;
-	position: absolute;
-}
 
 
 

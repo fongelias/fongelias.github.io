@@ -17,3 +17,5 @@ To Do list:
 -about will be underground
 
 projects will be in different clouds
+
+-issue with project area expansion, should be based off vw

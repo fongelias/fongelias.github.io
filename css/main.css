@@ -1020,9 +1020,6 @@ nav span {
 }
 
 @media (max-width: 545px) {
-	.card-content {
-		padding: 4rem;
-	}
 	.flex-nav-spacer {
 		display: none;
 	}
@@ -1511,6 +1508,12 @@ nav span {
 #journey-title {
 	position: absolute;
 	margin-left: 2rem;
+}
+
+@media (max-width: 545px) {
+	#journey-title {
+		margin-left: 0rem;
+	}
 }
 
 #journey-title h2 {

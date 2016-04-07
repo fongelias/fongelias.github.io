@@ -1352,9 +1352,9 @@ nav span {
 	height: 8rem;
 	width: 12rem;
 	/*animation*/
-	transition-timing-function: all ease-in-out;
-	-webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+	transition-timing-function: all 3s ease-in-out;
+	-webkit-transition: all 3s; /* Safari */
+    transition: all 3s;
 }
 
 #projects-card h2 {
@@ -1383,6 +1383,10 @@ nav span {
     	transform: scale(2.5);
     	top: -8vh;
     	left: calc(((100% + 6rem) - (2.5 * 12rem)) / 2 + 1rem);
+    	/*animation*/
+		transition-timing-function: all 3s ease-in-out;
+		-webkit-transition: all 3s; /* Safari */
+	    transition: all 3s;
 	}
 
 /* -----------------------Rain Objects--------------------------------------*/
@@ -1398,9 +1402,9 @@ nav span {
     background: -moz-linear-gradient(rgba(154,225,229,1), rgba(154,225,229,0)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(154,225,229,1), rgba(154,225,229,0)); /* Standard syntax */
 	/*animation*/
-	transition-timing-function: all ease-in-out;
-	-webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+	transition-timing-function: all 3s ease-in-out;
+	-webkit-transition: all 3s; /* Safari */
+    transition: all 3s;
 }
 
 .rain-drop {
@@ -1411,6 +1415,10 @@ nav span {
 	position: absolute;
 	display: inline-block;
 	top: -1rem;
+	/*animation*/
+	transition-timing-function: all 3s ease-in-out;
+	-webkit-transition: all 3s; /* Safari */
+    transition: all 3s;
 }
 
 .rain-drop-1 {
@@ -1496,7 +1504,7 @@ nav span {
 	}
 
 	.selected-project .rain-drop {
-		/*top: 20rem;*/
+		top: 20rem;
 	}
 
 /* -----------------------Journey Title-------------------------------------*/

@@ -20,13 +20,13 @@ $(document).ready(function(){
 		//return false;
 	});
 
-	/* ----------------Side Nav----------------------*/
+	/* ----------------Project Card----------------------*/
 	var projectTitle = $('.project-title');
 	var body = $("body");
 
 	//Click Hamburger to open Side nav
 	projectTitle.click(function() {
-		//this.toggleClass('selected-project');
+		$(this).toggleClass('selected-project');
 		body.toggleClass('active-project');
 		//return false;
 	});

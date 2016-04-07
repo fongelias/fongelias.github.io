@@ -1516,6 +1516,12 @@ nav span {
 	}
 }
 
+@media (max-width: 321px) {
+	#journey-title {
+		margin-left: -2rem;
+	}
+}
+
 #journey-title h2 {
 	position: absolute;
 	bottom: 0.5rem;

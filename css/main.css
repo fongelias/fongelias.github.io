@@ -1386,6 +1386,35 @@ nav span {
 	    transition: all 3s;
 	}
 
+	@media (max-width: 545px) {
+		.project-title.selected-project {
+			-ms-transform: scale(2); /* IE 9 */
+	    	-webkit-transform: scale(2); /* Safari */
+	    	transform: scale(2);
+	    	top: -8vh;
+	    	left: calc((100vw - 2rem) / 2 - 12rem);
+	    	/*animation*/
+			transition-timing-function: all 3s ease-in-out;
+			-webkit-transition: all 3s; /* Safari */
+		    transition: all 3s;
+		}
+	}
+
+	@media (max-width: 321px) {
+		.project-title.selected-project {
+			-ms-transform: scale(1.5); /* IE 9 */
+	    	-webkit-transform: scale(1.5); /* Safari */
+	    	transform: scale(1.5);
+	    	top: -8vh;
+	    	left: -1rem;
+	    	/*animation*/
+			transition-timing-function: all 3s ease-in-out;
+			-webkit-transition: all 3s; /* Safari */
+		    transition: all 3s;
+		}
+	}
+
+
 /* -----------------------Rain Objects--------------------------------------*/
 .rain-container {
 	margin-top: 7.5rem;

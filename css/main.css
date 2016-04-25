@@ -603,39 +603,31 @@ svg {
 }
 
 /* ------------------------Scale------------------------*/
-.rotate-180 {
-	-webkit-animation: rotate180 40s ease-in-out infinite; /* Chrome, Safari, Opera */
-	animation: rotate180 40s ease-in-out infinite;
+.cloud-scale {
+	-webkit-animation: cloudscale 5s ease-in-out alternate infinite; /* Chrome, Safari, Opera */
+	animation: cloudscale 5s ease-in-out alternate infinite;
 }
 
 /* Chrome, Safari, Opera */ 
-@-webkit-keyframes rotate180 {
+@-webkit-keyframes cloudscale {
     from {
-    	transform: translateY(0.8rem) translateX(0) rotate(0deg);
-		-webkit-transform: translateY(0.8rem) translateX(0) rotate(0deg);
-		-moz-transform: translateY(0.8rem) translateX(0) rotate(0deg);
+    	-ms-transform: scale(1); /* IE 9 */
+    	-webkit-transform: scale(1); /* Safari */
+    	transform: scale(1);
     }
     to {
-    	transform: translateY(0.8rem) translateX(0) rotate(-180deg);
-		-webkit-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
-		-moz-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+    	-ms-transform: scale(1.4); /* IE 9 */
+    	-webkit-transform: scale(1.4); /* Safari */
+    	transform: scale(1.4);
     }
 } 
 
 /* Standard syntax */ 
-@keyframes rotate180 {
-    from {
-    	transform: translateY(0.8rem) translateX(0) rotate(0deg);
-		-webkit-transform: translateY(0.8rem) translateX(0) rotate(0deg);
-		-moz-transform: translateY(0.8rem) translateX(0) rotate(0deg);
-    }
+@keyframes cloudscale {
     to {
-    	transform: translateY(0.8rem) translateX(0) rotate(-180deg);
-		-webkit-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
-		-moz-transform: translateY(0.8rem) translateX(0) rotate(-180deg);
+    	transform: scale(1.4);
     }
 }
-
 
 /* ------------------------Type Text------------------------*/
 /* Requires one class per differently sized text */
@@ -837,7 +829,7 @@ nav span {
 	top: 2rem;
 	left: 2rem;
 	opacity: 0;
-	background-color: black;
+	background-color: white;
 	/*animation*/
 	transition-timing-function: all ease-in-out;
 	-webkit-transition: all 0.5s; /* Safari */
@@ -909,9 +901,9 @@ nav span {
 	position: relative;
 	opacity: 0;
 	/*animation*/
-	transition-timing-function: all 1s;
-	-webkit-transition: all 1s; /* Safari */
-	transition: all 1s;
+	transition-timing-function: all 2s;
+	-webkit-transition: all 2s; /* Safari */
+	transition: all 2s;
 }
 
 	/* ++++++++++++Javacript Applied Classes+++*/
@@ -921,6 +913,14 @@ nav span {
 		transition-timing-function: all 1s;
 		-webkit-transition: all 1s; /* Safari */
 		transition: all 1s;
+	}
+
+	.active-side-nav .side-nav-item span {
+		opacity: 1;
+		/*animation*/
+		transition-timing-function: all 2s;
+		-webkit-transition: all 2s; /* Safari */
+		transition: all 2s;
 	}
 
 /* ------------------------Nav Burger-----------------------------*/
@@ -1104,6 +1104,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 13rem;
+	/*animation*/
+	-webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
 }
 
 .cloud-2 {
@@ -1112,6 +1115,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 3rem;
+	/*animation*/
+	-webkit-transition-delay: 1.8s; /* Safari */
+    transition-delay: 1.8s;
 }
 
 .cloud-3 {
@@ -1120,6 +1126,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 10rem;
+	/*animation*/
+	-webkit-transition-delay: 2.3s; /* Safari */
+    transition-delay: 2.3s;
 }
 
 .cloud-4 {
@@ -1128,6 +1137,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 17rem;
+	/*animation*/
+	-webkit-transition-delay: 0.4s; /* Safari */
+    transition-delay: 0.4s;
 }
 
 .cloud-5 {
@@ -1136,6 +1148,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 21rem;
+	/*animation*/
+	-webkit-transition-delay: 1.7s; /* Safari */
+    transition-delay: 1.7s;
 }
 
 .cloud-6 {
@@ -1144,6 +1159,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 6rem;
+	/*animation*/
+	-webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
 }
 
 .cloud-7 {
@@ -1152,6 +1170,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: -3rem;
+	/*animation*/
+	-webkit-transition-delay: 0.9s; /* Safari */
+    transition-delay: 0.9s;
 }
 
 .cloud-8 {
@@ -1160,6 +1181,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 11.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.2s; /* Safari */
+    transition-delay: 0.2s;
 }
 
 .cloud-9 {
@@ -1168,6 +1192,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 27.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.8s; /* Safari */
+    transition-delay: 0.8s;
 }
 
 .cloud-10 {
@@ -1176,6 +1203,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 34.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.7s; /* Safari */
+    transition-delay: 0.7s;
 }
 
 .cloud-11 {
@@ -1184,6 +1214,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 29.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.3s; /* Safari */
+    transition-delay: 0.3s;
 }
 
 .cloud-12 {
@@ -1192,6 +1225,9 @@ nav span {
 	position: absolute;
 	bottom: 4.5rem;
 	left: 24.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
 }
 
 .cloud-13 {
@@ -1200,6 +1236,9 @@ nav span {
 	position: absolute;
 	bottom: 7rem;
 	left: 37.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.2s; /* Safari */
+    transition-delay: 0.2s;
 }
 
 .cloud-14 {
@@ -1208,6 +1247,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 51.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.4s; /* Safari */
+    transition-delay: 0.4s;
 }
 
 .cloud-15 {
@@ -1216,6 +1258,9 @@ nav span {
 	position: absolute;
 	bottom: 5.5rem;
 	left: 57.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.6s; /* Safari */
+    transition-delay: 0.6s;
 }
 
 .cloud-16 {
@@ -1224,6 +1269,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 55.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.9s; /* Safari */
+    transition-delay: 0.9s;
 }
 
 .cloud-17 {
@@ -1232,6 +1280,9 @@ nav span {
 	position: absolute;
 	bottom: 5.5rem;
 	left: 39.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.3s; /* Safari */
+    transition-delay: 0.3s;
 }
 
 .cloud-18 {
@@ -1240,6 +1291,9 @@ nav span {
 	position: absolute;
 	bottom: 5.5rem;
 	left: 45.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.7s; /* Safari */
+    transition-delay: 0.7s;
 }
 
 .cloud-19 {
@@ -1248,6 +1302,9 @@ nav span {
 	position: absolute;
 	bottom: 6rem;
 	left: 61.5rem;
+	/*animation*/
+	-webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
 }
 
 .cloud-bottom {

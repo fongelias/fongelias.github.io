@@ -9,9 +9,8 @@ html {
 
 html,body {
     width: 100%;
-    height: 100%;
     margin: 0px;
-    padding: 0px;
+    margin-bottom: -1.4rem;
     overflow-x: hidden;
     display: block;
 }
@@ -38,7 +37,7 @@ svg {
 	    /*transition: all 0.3s;
 	}*/
 
-	body::after {
+	/*body::after {
 		position: absolute;
 		bottom: 0rem;
 		left: 0rem;
@@ -48,7 +47,7 @@ svg {
 		z-index: 100;
 		height: 1rem;
 		background-color: white;
-	}
+	}*/
 
 /* ########################Reusable Objects############################################### */
 /* ------------------------Chevron------------------------*/
@@ -664,7 +663,7 @@ nav {
 }
 
 ul {
-	padding-left: 1rem;
+	padding-left: 0rem; /*1rem*/
 }
 
 @media (max-width: 545px) {
@@ -994,8 +993,8 @@ nav span {
 	}
 /* ########################Card Formats############################################### */
 .card {
-	min-height: calc(100vh - 1rem);
-	margin: 1rem 1rem 0rem 1rem;
+	min-height: 100vh; /*calc(100vh - 1rem)*/
+	/*margin: 1rem 1rem 0rem 1rem;*/
 	position: relative;
 	overflow: hidden;
 	/*for flex-box class*/
@@ -1013,10 +1012,10 @@ nav span {
 }
 
 .card-content {
-	height: 100%;
+	height: 100vh;
 	width: calc(100% - 6rem);
 	padding-left: 6rem;
-	position: absolute;
+	position: relative;
 }
 
 @media (max-width: 545px) {
@@ -1027,8 +1026,8 @@ nav span {
 
 /* ########################Title Card############################################### */
 #title-card {
-	height: calc(100vh - 2rem);
-	margin: 1rem 1rem 1rem 1rem;
+	height: 100vh;/*calc(100vh - 2rem)*/
+	/*margin: 1rem 1rem 1rem 1rem;*/
 	background-color: #c0dfff;
 }
 
@@ -1317,6 +1316,29 @@ nav span {
 	width: 100%;
 }
 
+/* ########################Title Card 2########################################### */
+#title-card-2 {
+	background-color: #c0dfff;
+	/*background-color: #ffbbcc;*/
+	position: relative;
+}
+
+#earth-container {
+	background-color: #43ce61;
+	position: absolute;
+	height: 80vh;
+	width: calc(100% + 6rem);
+	left: 0rem;
+	bottom: 0rem;
+}
+
+#baseball-field {
+	background-color: #88ee71;
+	position: absolute;
+	height: 30vh;
+	width: 30vh;
+}
+
 /* ########################About Card########################################### */
 #about-card {
 	background-color: #ccd7e2;
@@ -1369,7 +1391,8 @@ nav span {
 
 /* ########################Projects Card########################################### */
 #projects-card {
-	background-color: #ffbbcc;
+	background-color: #c0dfff;
+	/*background-color: #ffbbcc;*/
 	position: relative;
 }
 

@@ -20,6 +20,12 @@ $(document).ready(function(){
 		//return false;
 	});
 
+	//Function to reset side nav (used by event listeners)
+	function resetSideNav() {
+		hamburger.removeClass('active');
+		body.removeClass('active-side-nav');
+	};
+
 	/* ----------------Project Card----------------------*/
 	var projectTitle = $('.project-title');
 	var body = $("body");
@@ -42,7 +48,8 @@ $(document).ready(function(){
 	//Window width detection
 	function checkWidth() {
 		var windowsize = $(window).width();
-		if (windowsize > 837) {
+		if (windowsize > 200) {
+			resetSideNav();
 		};
 	};
 	//Execute on load
@@ -52,5 +59,7 @@ $(document).ready(function(){
 
 	/* ----------------Window scroll detection-----------*/
 	$(window).on("scroll", function() {
+		resetSideNav();
 	});
+
 });

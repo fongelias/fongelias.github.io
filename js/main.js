@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	/* ########################Unit Conversion Package###################################### */
+	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+	console.log(w);
+	console.log(h);
+	console.log(window.innerWidth);
+	console.log(window.innerHeight);
 	/* ########################Reused Objects below######################################### */
 	/* ########################Specific Objects below####################################### */
 	/* ----------------Side Nav----------------------*/

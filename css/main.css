@@ -1,5 +1,11 @@
+@font-face {
+	font-family: "Avenir";
+	src: url(../fonts/Avenir.ttc) format("truetype");
+}
+
+
 * {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Avenir', sans-serif;
 }
 
 /* ########################Elements below############################################### */
@@ -32,6 +38,35 @@ svg {
 	-webkit-filter: url(#goo);
 	filter: url(#goo);
 }
+
+/* ------------------------Scroll Bar------------------------*/
+::-webkit-scrollbar {
+	width: 10px;
+	/*animation*/
+	transition-timing-function: all ease 13s;
+	-webkit-transition: all ease 13s; /* Safari */
+	transition: all ease 13s;
+}
+
+::-webkit-scrollbar:hover {
+	width: 15px;
+	/*animation*/
+	transition-timing-function: all 13s;
+	-webkit-transition: all 13s; /* Safari */
+	transition: all 13s;
+}
+
+::-webkit-scrollbar-track {
+	background: #eff1fa;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(#6274ce, #9969d8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6274ce, #9969d8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6274ce, #9969d8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6274ce, #9969d8)
+}
+
 /* ########################Animations############################################### */
 /* ------------------------Rotate------------------------*/
 .rotate-180-1 {
@@ -70,7 +105,9 @@ svg {
 
 
 /* ########################Navs###################################################### */
-
+nav ul {
+	margin: 0rem;
+}
 	/* ++++++++++++Javacript Applied Classes+++*/
 
 /* ########################Header############################################### */
@@ -82,6 +119,20 @@ svg {
 	top: calc((90vh - (38.6rem * 1.2)) / 2);
 	position: absolute;
 }
+
+@media (max-width: 386px) {
+	.logo-container {
+		top: calc((90vh - (38.6rem * 1.2)) / 2 + 3rem);
+	}
+}
+
+@media (max-height: 565px) {
+	.logo-container {
+		top: calc(6rem);
+	}
+}
+
+
 
 .logo-rotated-container {
 	height: 38.6rem; 
@@ -144,7 +195,46 @@ svg {
 }
 
 
+/* -----------------------Headlines-----------------------------*/
+.title-text {
+	position: absolute;
+	top: calc((90vh - (38.6rem * 1.2)) / 2 - 4rem);
+	left: calc((100vw - (38.6rem * 1.2)) / 2 - 7rem);
+	font-size: 2rem;
+	letter-spacing: 0.4rem;
+	font-weight: 100;
+}
 
+@media (max-height: 615px) {
+	.title-text {
+		top: 2rem;
+	}
+}
+
+@media (max-width: 624px) {
+	.title-text {
+		left: 6rem;
+	}
+}
+
+.title-caption {
+	position: absolute;
+	top: calc((90vh - (38.6rem * 1.2)) / 2 + (38.6rem * 1.2));
+	left: calc((100vw - (38.6rem * 1.2)) / 2 + 16rem);
+	font-size: 1.4rem;
+	letter-spacing: 0.3rem;
+	font-weight: 100;
+}
+
+@media (max-height: 565px) {
+	.title-caption {
+		top: calc(6rem + (38.6rem * 1.2));
+	}
+}
+
+.title-caption span, .title-text span {
+	color: #d7d7d7;
+}
 
 
 

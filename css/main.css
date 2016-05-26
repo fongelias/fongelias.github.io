@@ -181,9 +181,9 @@ nav ul li p a:hover {
 #open-nav-button {
 	position: absolute;
 	top: 0rem;
-	left: -4rem;
-	height: 4rem;
-	width: 4rem;
+	left: -4.5rem;
+	height: 4.5rem;
+	width: 4.5rem;
 	background-color: white;
 	border: 1px solid #d7d7d7;
 	border-right: 0px; 
@@ -197,8 +197,66 @@ nav ul li p a:hover {
 	}
 }
 
-	/* ++++++++++++Javacript Applied Classes+++*/
+#open-nav-button .bar-1 {
+	position: absolute;
+	left: 0.75rem;
+	top: 1.6rem;
+	height: 0.5rem;
+	width: 1.5rem;
+	background-color: #d7d7d7;
+	border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+	-webkit-transform: rotate(135deg);
+	   -moz-transform: rotate(135deg);
+	     -o-transform: rotate(135deg);
+	/*animation*/
+	transition-timing-function: all ease 0.5s;
+	-webkit-transition: all ease 0.5s; /* Safari */
+	transition: all ease 0.5s;
+}
 
+#open-nav-button .bar-2 {
+	position: absolute;
+	left: 0.75rem;
+	top: 2.4rem;
+	height: 0.5rem;
+	width: 1.5rem;
+	background-color: #d7d7d7;
+	border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+	-webkit-transform: rotate(-135deg);
+	   -moz-transform: rotate(-135deg);
+	     -o-transform: rotate(-135deg);
+	/*animation*/
+	transition-timing-function: all ease 0.5s;
+	-webkit-transition: all ease 0.5s; /* Safari */
+	transition: all ease 0.5s;
+}
+
+	/* ++++++++++++Javacript Applied Classes+++*/
+	#open-nav-button.active .bar-1 {
+		position: absolute;
+		left: 0.75rem;
+		top: 2rem;
+		height: 0.5rem;
+		width: 3rem;
+		background-color: #d7d7d7;
+		border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+		-webkit-transform: rotate(45deg);
+		   -moz-transform: rotate(45deg);
+		     -o-transform: rotate(45deg);
+	}
+
+	#open-nav-button.active .bar-2 {
+		position: absolute;
+		left: 0.75rem;
+		top: 2rem;
+		height: 0.5rem;
+		width: 3rem;
+		background-color: #d7d7d7;
+		border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+		-webkit-transform: rotate(-45deg);
+		   -moz-transform: rotate(-45deg);
+		     -o-transform: rotate(-45deg);
+	}
 /* ########################Header############################################### */
 /* -----------------------Containers--------------------------*/
 .logo-container {

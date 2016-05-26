@@ -9,9 +9,21 @@ $(document).ready(function(){
 	/* ########################Reused Objects below######################################### */
 	/* ########################Specific Objects below####################################### */
 	/* ----------------Side Nav----------------------*/
-	
+	var openNavButton = $('#open-nav-button');
+	var body = $("body");
+	//Click Hamburger to open Side nav
+	openNavButton.click(function() {
+		openNavButton.toggleClass('active');
+		body.toggleClass('nav-open');
+		//return false;
+	});
+	//Function to reset side nav (used by event listeners)
+	function resetSideNav() {
+		openNavButton.removeClass('active');
+		body.removeClass('nav-open');
+	};
 
-	/* ----------------Project Card----------------------*/
+	
 	
 	/* ########################Reused Event Listeners below################################# */
 	/* ----------------Window width detection-----------*/
@@ -19,7 +31,7 @@ $(document).ready(function(){
 	function checkWidth() {
 		var windowsize = $(window).width();
 		if (windowsize > 200) {
-			
+			resetSideNav();
 		};
 	};
 	//Execute on load
@@ -29,7 +41,7 @@ $(document).ready(function(){
 
 	/* ----------------Window scroll detection-----------*/
 	$(window).on("scroll", function() {
-		
+		resetSideNav();
 	});
 
 });

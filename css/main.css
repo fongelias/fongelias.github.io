@@ -67,6 +67,33 @@ svg {
     background: linear-gradient(#6274ce, #000230)
 }
 
+/* ########################Reusable Formats############################################### */
+/* ------------------------Parallax----------------------*/
+.parallax {
+	perspective: 1px;
+}
+
+.parallax-layer {
+	position: absolute;
+	top: 0rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.parallax-layer.layer-1 {
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	   -moz-transform: translateZ(0);
+	     -o-transform: translateZ(0);
+}
+
+.parallax-layer.layer-2 {
+	transform: translateZ(-1px) scale(2);
+	-webkit-transform: translateZ(-1px) scale(2);
+	   -moz-transform: translateZ(-1px) scale(2);
+	     -o-transform: translateZ(-1px) scale(2);
+}
 /* ########################Animations############################################### */
 /* ------------------------Rotate------------------------*/
 .rotate-180-1 {
@@ -173,9 +200,6 @@ nav ul li p a:hover {
 }
 
 	/* ++++++++++++Javacript Applied Classes+++*/
-	.nav-open {
-
-	}
 
 /* -----------------------Open Nav Button--------------------------*/
 #open-nav-button {
@@ -189,6 +213,10 @@ nav ul li p a:hover {
 	border-right: 0px; 
 	border-top: 0px;
 	border-radius: 0rem 0rem 0rem 1rem;
+}
+
+#open-nav-button:hover {
+	background-color: #eff1fa;
 }
 
 @media (min-width: 737px) {
@@ -233,32 +261,29 @@ nav ul li p a:hover {
 
 	/* ++++++++++++Javacript Applied Classes+++*/
 	#open-nav-button.active .bar-1 {
-		position: absolute;
-		left: 0.75rem;
 		top: 2rem;
 		height: 0.5rem;
 		width: 3rem;
-		background-color: #d7d7d7;
-		border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 		-webkit-transform: rotate(45deg);
 		   -moz-transform: rotate(45deg);
 		     -o-transform: rotate(45deg);
 	}
 
 	#open-nav-button.active .bar-2 {
-		position: absolute;
-		left: 0.75rem;
 		top: 2rem;
 		height: 0.5rem;
 		width: 3rem;
-		background-color: #d7d7d7;
-		border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 		-webkit-transform: rotate(-45deg);
 		   -moz-transform: rotate(-45deg);
 		     -o-transform: rotate(-45deg);
 	}
 /* ########################Header############################################### */
 /* -----------------------Containers--------------------------*/
+header {
+	min-height: 100vh;
+	min-width: 100%;
+}
+
 .logo-container {
 	height: calc(38.6rem * 1.2); 
 	width: calc(38.6rem * 1.2);
@@ -278,8 +303,6 @@ nav ul li p a:hover {
 		top: calc(6rem);
 	}
 }
-
-
 
 .logo-rotated-container {
 	height: 38.6rem; 
@@ -383,9 +406,80 @@ nav ul li p a:hover {
 	color: #d7d7d7;
 }
 
+/* -----------------------Gradient-----------------------------*/
+.title-gradient {
+	width: 100%;
+	height: calc((90vh - (38.6rem * 1.2)) / 2 + 3rem);
+	background: -webkit-linear-gradient(white 70%, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(white 70%, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(white 70%, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(white 70%, rgba(255,255,255,0)); /* Standard syntax */
+}
 
+/* ########################Works############################################### */
+/* -----------------------Containers-----------------------------*/
+#works-section-container {}
 
-/* -----------------------Project Title Objects-----------------------------*/
+.project-container {
+	width: 75rem;
+	margin-left: calc((100vw - 75rem) / 2);
+	margin-top: calc((100vh - (20rem * 3)) / 3);
+	height: 20rem;
+	border: 1px solid black;
+	border-radius: 0.3rem;
+	position: relative;
+}
+
+@media (max-height: 635px) {
+	.project-container {
+		margin-top: 2rem;
+	}
+}
+
+/* -----------------------Content-----------------------------*/
+.project-image {
+	height: 100%;
+	display: inline-block;
+	opacity: 0.5;
+	/*animation*/
+	transition-timing-function: all ease 0.5s;
+	-webkit-transition: all ease 0.5s; /* Safari */
+	transition: all ease 0.5s;
+}
+
+.project-container:hover .project-image{
+	opacity: 1;
+}
+
+.project-image img {
+	height: 100%;
+}
+
+.project-description {
+	opacity: 0.5;
+	display: inline-block;
+}
+
+.project-container:hover .project-description{
+	opacity: 1;
+}
+
+.project-description h3 {
+	margin: 0;
+	font-size: 4rem;
+	position: absolute;
+	top: 6rem;
+	left: 35rem;
+}
+
+.project-description p {
+	margin: 0;
+	font-size: 1.6rem;
+	position: absolute;
+	top: 13rem;
+	left: 35rem;
+}
+
 
 
 	/* ++++++++++++Javacript Applied Classes+++*/

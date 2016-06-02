@@ -596,7 +596,7 @@ header {
 	left: calc((100vw - 6rem) / 2);
 }
 
-@media (min-resolution: 325dpi) {
+@media (min-resolution: 300dpi) {
 	.ring {
 		border: 3px solid #6274ce;
 	}

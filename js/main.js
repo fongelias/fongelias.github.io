@@ -6,8 +6,20 @@ $(document).ready(function(){
 	console.log(h);
 	console.log(window.innerWidth);
 	console.log(window.innerHeight);
-	/* ########################Reused Objects below######################################### */
+	/* ########################Reused Variables below######################################### */
+	var body = $("body");
 	/* ########################Specific Objects below####################################### */
+	/* ----------------Loading Screen----------------------*/
+	//Removes class that displays loading screen after 3 seconds
+	setTimeout(function(){
+		body.removeClass('loading-screen-open');
+		body.addClass('loading-screen-closing')
+	}, 10000);
+
+	setTimeout(function(){
+		body.removeClass('loading-screen-closing');
+	}, 10300);
+
 	/* ----------------Side Nav----------------------*/
 	var openNavButton = $('#open-nav-button');
 	var body = $("body");

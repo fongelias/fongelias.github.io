@@ -97,8 +97,8 @@ svg {
 /* ########################Animations############################################### */
 /* ------------------------Rotate------------------------*/
 .rotate-180-1 {
-	-webkit-animation: rotate180-1 100s ease-in-out 3s infinite; /* Chrome, Safari, Opera */
-	animation: rotate180-1 100s ease-in-out 3s infinite;
+	-webkit-animation: rotate180-1 100s ease-in-out 10s infinite; /* Chrome, Safari, Opera */
+	animation: rotate180-1 100s ease-in-out 10s infinite;
 }
 
 /* Chrome, Safari, Opera */ 
@@ -129,7 +129,73 @@ svg {
     }
 }
 
+/* ------------------------Flip Horizontal------------------------*/
+.flip-horizontal {
+	-webkit-animation: flipHorizontal 3s ease-in-out 0s infinite; /* Chrome, Safari, Opera */
+	animation: flipHorizontal 3s ease-in-out 0s infinite;
+}
 
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes flipHorizontal {
+    from {
+    	-webkit-transform: rotateX(0deg);
+	   -moz-transform: rotateX(0deg);
+	     -o-transform: rotateX(0deg);
+    }
+    to {
+    	-webkit-transform: rotateX(360deg);
+	   -moz-transform: rotateX(360deg);
+	     -o-transform: rotateX(360deg);
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes flipHorizontal {
+    from {
+    	-webkit-transform: rotateX(0deg);
+	   -moz-transform: rotateX(0deg);
+	     -o-transform: rotateX(0deg);
+    }
+    to {
+    	-webkit-transform: rotateX(360deg);
+	   -moz-transform: rotateX(360deg);
+	     -o-transform: rotateX(360deg);
+    }
+}
+
+/* ------------------------Flip Vertical------------------------*/
+.flip-vertical {
+	-webkit-animation: flipVertical 3s ease-in-out 1s infinite; /* Chrome, Safari, Opera */
+	animation: flipVertical 3s ease-in-out 1s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes flipVertical {
+    from {
+    	-webkit-transform: rotateY(0deg);
+	   -moz-transform: rotateY(0deg);
+	     -o-transform: rotateY(0deg);
+    }
+    to {
+    	-webkit-transform: rotateY(360deg);
+	   -moz-transform: rotateY(360deg);
+	     -o-transform: rotateY(360deg);
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes flipVertical {
+    from {
+    	-webkit-transform: rotateY(0deg);
+	   -moz-transform: rotateY(0deg);
+	     -o-transform: rotateY(0deg);
+    }
+    to {
+    	-webkit-transform: rotateY(360deg);
+	   -moz-transform: rotateY(360deg);
+	     -o-transform: rotateY(360deg);
+    }
+}
 
 /* ########################Navs###################################################### */
 /* -----------------------Containers--------------------------*/
@@ -458,6 +524,10 @@ header {
 .project-description {
 	opacity: 0.5;
 	display: inline-block;
+	/*animation*/
+	transition-timing-function: all ease 0.5s;
+	-webkit-transition: all ease 0.5s; /* Safari */
+	transition: all ease 0.5s;
 }
 
 .project-container:hover .project-description{
@@ -483,6 +553,56 @@ header {
 
 
 	/* ++++++++++++Javacript Applied Classes+++*/
+
+/* ########################Loading Screen############################################### */
+/* -----------------------Containers-----------------------------*/
+.loading-screen {
+	background-color: #eff1fa;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	display: none;
+	/*animation*/
+	transition-timing-function: all ease 0.5s;
+	-webkit-transition: all ease 0.5s; /* Safari */
+	transition: all ease 0.5s;
+}
+
+.loading-screen-closing .loading-screen {
+	opacity: 0;
+	display: inline-block;
+}
+
+.loading-screen-open .loading-screen {
+	opacity: 1;
+	display: inline-block;
+}
+/* -----------------------Loading graphic-----------------------------*/
+.square {
+	height: 6rem;
+	width: 6rem;
+	border-radius: 100%;
+	border: 1px solid #6274ce;
+	position: absolute;
+	top: calc((100vh - 6rem) / 2);
+	left: calc((100vw - 6rem) / 2);
+}
+
+/* -----------------------Changes to Scroll-----------------------------*/
+.loading-screen-open::-webkit-scrollbar {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 

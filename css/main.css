@@ -530,6 +530,12 @@ header {
 	transition: all ease 0.5s;
 }
 
+@media (max-width: 736px) {
+	.project-description {
+		display: none;
+	}
+}
+
 .project-container:hover .project-description{
 	opacity: 1;
 }
@@ -580,7 +586,7 @@ header {
 	display: inline-block;
 }
 /* -----------------------Loading graphic-----------------------------*/
-.square {
+.ring {
 	height: 6rem;
 	width: 6rem;
 	border-radius: 100%;
@@ -588,6 +594,12 @@ header {
 	position: absolute;
 	top: calc((100vh - 6rem) / 2);
 	left: calc((100vw - 6rem) / 2);
+}
+
+@media (min-resolution: 325dpi) {
+	.ring {
+		border: 2px solid #6274ce;
+	}
 }
 
 /* -----------------------Changes to Scroll-----------------------------*/

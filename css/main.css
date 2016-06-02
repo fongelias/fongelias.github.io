@@ -596,9 +596,13 @@ header {
 	left: calc((100vw - 6rem) / 2);
 }
 
-@media (resolution: 326dpi) {
+@media (max-width: 365px) {
 	.ring {
+		height: 8rem;
+		width: 8rem;
 		border: 3px solid red;
+		top: calc((100vh - 8rem) / 2);
+		left: calc((100vw - 8rem) / 2);
 	}
 }
 

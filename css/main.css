@@ -484,14 +484,11 @@ header {
 
 /* ########################Works############################################### */
 /* -----------------------Containers-----------------------------*/
-#works-section-container {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
+#works-section-container {}
 
 @media (max-height: 736px) {
 	#works-section-container {
-		padding-top: 24rem;
+		padding-top: 12rem;
 	}
 }
 
@@ -513,25 +510,32 @@ header {
 }
 
 .project-container {
+	border: 1px solid black;
+	margin-top: calc((100vh - (20rem * 3)) / 3);
+}
+
+.project-inner-container {
 	max-width: 75rem;
 	margin-left: calc((100vw - 75rem) / 2);
-	margin-top: calc((100vh - (20rem * 3)) / 3);
 	height: 20rem;
-	border: 1px solid black;
 	border-radius: 0.3rem;
 	position: relative;
 }
 
 @media (max-width: 919px) {
-	.project-container {
+	.project-inner-container {
 		margin-right: 4rem;
 	}
 }
 
 @media (max-width: 736px) {
-	.project-container {
+	.project-inner-container {
 		width: 20rem;
 		overflow: hidden;
+		margin: 0rem;
+	}
+
+	.project-container {
 		margin-left: 1rem;
 		margin-right: 1rem;
 		margin-top: calc((100vh - (20rem * 3)) / 3);

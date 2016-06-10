@@ -543,7 +543,7 @@ header {
 	}
 }
 
-@media (max-height: 635px) {
+@media (max-height: 635px) and (max-width: 736px) {
 	.project-container {
 		margin-top: 2rem;
 	}
@@ -636,6 +636,70 @@ header {
 
 
 	/* ++++++++++++Javacript Applied Classes+++*/
+
+/* ########################About Section############################################### */
+/* -----------------------Containers-----------------------------*/
+#about-section-container {
+	padding-top: 24rem;
+}
+
+
+#about-section-container .inner-container {
+	max-width: 75rem;
+	margin-left: calc((100vw - 75rem) / 2);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	height: 20rem;
+	border-radius: 0.3rem;
+	position: relative;
+}
+
+@media (max-width: 919px) {
+	#about-section-container .inner-container {
+		margin-right: 4rem;
+	}
+}
+
+@media (max-width: 736px) {
+	#about-section-container .inner-container {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		margin-top: calc((100vh - (20rem * 3)) / 3);
+	}
+}
+
+
+@media (max-height: 635px) and (max-width: 736px) {
+	#about-section-container .inner-container {
+		margin-top: 2rem;
+	}
+}
+
+#about-section-container .left {
+	width: 39%;
+	height: 100%;
+	display: inline-block;
+}
+
+#about-section-container .right {
+	width: 59%;
+	height: 100%;
+	display: inline-block;
+}
+
+/* -----------------------Content-----------------------------*/
+#about-section-container .left h2 {
+	float: right;
+	margin-right: 6rem;
+	font-size: 3rem;
+}
+
+#about-section-container .right p {
+	float: left;
+	font-size: 1.4rem;
+	margin: 2.9rem 0rem 0rem 0rem;
+}
+
 
 /* ########################Loading Screen############################################### */
 /* -----------------------Containers-----------------------------*/

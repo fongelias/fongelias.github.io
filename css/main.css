@@ -346,8 +346,14 @@ nav ul li p a:hover {
 /* ########################Header############################################### */
 /* -----------------------Containers--------------------------*/
 header {
-	min-height: 100vh;
+	height: calc((90vh - (38.6rem * 1.2)) / 2 + (38.6rem * 1.2) + 3.8rem + (0.938rem * 2));
 	min-width: 100%;
+}
+
+@media (max-height: 565px) {
+	header {
+		height: calc(6rem + (38.6rem * 1.2) + 3.8rem + (0.938rem * 2));
+	}
 }
 
 .logo-container {
@@ -704,6 +710,7 @@ header {
 /* -----------------------Containers-----------------------------*/
 #contact-section-container{
 	padding-top: 24rem;
+	padding-bottom: 20rem;
 	padding-left: calc((100vw - (32.6625rem + 1rem + 1rem)) / 2);
 }
 
@@ -817,6 +824,14 @@ header {
 
 #contact-section-container form input[type=submit]:focus {
 	background-color: #ebebeb;
+}
+
+
+/* ########################Footer############################################### */
+/* -----------------------Content-----------------------------*/
+footer p {
+	font-size: 1.4rem;
+	text-align: center;
 }
 
 

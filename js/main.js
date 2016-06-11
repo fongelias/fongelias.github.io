@@ -14,11 +14,11 @@ $(document).ready(function(){
 	setTimeout(function(){
 		body.removeClass('loading-screen-open');
 		body.addClass('loading-screen-closing')
-	}, 10000);
+	}, 5000);
 
 	setTimeout(function(){
 		body.removeClass('loading-screen-closing');
-	}, 10300);
+	}, 5300);
 
 	/* ----------------Side Nav----------------------*/
 	var openNavButton = $('#open-nav-button');

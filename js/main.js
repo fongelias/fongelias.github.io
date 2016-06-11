@@ -35,6 +35,32 @@ $(document).ready(function(){
 		body.removeClass('nav-open');
 	};
 
+	/* ----------------Form Fields----------------------*/
+	var contactNameInput = $('#contact-name-input');
+	var contactNameContainer = $('#contact-name');
+	var contactEmailInput = $('#contact-email-input');
+	var contactEmailContainer = $('#contact-email');
+
+	//Apply Focus Effect upon Focus on "Name" Input
+	contactNameInput.focusin(function() {
+		contactNameContainer.addClass('active');
+	});
+
+	//Remove Focus Effect upon leaving "Name" Input
+	contactNameInput.focusout(function() {
+		contactNameContainer.removeClass('active');
+	});
+
+	//Apply Focus Effect upon Focus on "Email" Input
+	contactEmailInput.focusin(function() {
+		contactEmailContainer.addClass('active');
+	});
+
+	//Remove Focus Effect upon leaving "Email" Input
+	contactEmailInput.focusout(function() {
+		contactEmailContainer.removeClass('active');
+	});
+
 	
 	
 	/* ########################Reused Event Listeners below################################# */

@@ -824,6 +824,7 @@ header {
 
 #contact-section-container form input[type=submit]:focus {
 	background-color: #ebebeb;
+	outline: none;
 }
 
 

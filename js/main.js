@@ -13,7 +13,7 @@ $(document).ready(function(){
 	//Removes class that displays loading screen after 3 seconds
 	setTimeout(function(){
 		body.removeClass('loading-screen-open');
-		body.addClass('loading-screen-closing')
+		body.addClass('loading-screen-closing');
 	}, 5000);
 
 	setTimeout(function(){
@@ -61,12 +61,34 @@ $(document).ready(function(){
 		contactEmailContainer.removeClass('active');
 	});
 
-	
-	
+	/* ----------------Pop Over----------------------*/
+	var popOver = $(".pop-over");
+	var popOverBackground = $(".pop-over-background");
+	var myCEProjectLink = $("#my-ce-project-link");
+	var closePopOverButton = $('#close-pop-over-button');
+
+	//Close PopOver
+	closePopOverButton.click(function() {
+		body.removeClass("pop-over-open-contents");
+		setTimeout(function(){
+			body.removeClass("pop-over-open")
+		}, 1000);
+	});
+
+	//Open My CE Project
+	myCEProjectLink.click(function(){
+		body.addClass("pop-over-open");
+		setTimeout(function(){
+			body.addClass("pop-over-open-contents")
+		}, 1000);
+	});
+
+
 	/* ########################Reused Event Listeners below################################# */
 	/* ----------------Window width detection-----------*/
 	//Window width detection
 	function checkWidth() {
+		//Run Functions dependent on window width
 		var windowsize = $(window).width();
 		if (windowsize > 200) {
 			resetSideNav();
@@ -80,6 +102,10 @@ $(document).ready(function(){
 	/* ----------------Window scroll detection-----------*/
 	$(window).on("scroll", function() {
 		resetSideNav();
+	});
+
+	$(".pop-over").on("scroll", function() {
+		console.log('1');
 	});
 
 });

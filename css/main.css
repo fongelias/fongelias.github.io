@@ -885,7 +885,7 @@ footer p {
 .pop-over-background.background-1 {
 	width: 100%;
 	top: 0rem;
-	opacity: 0.7;
+	opacity: 0.8;
 	border-left: 1px solid #d7d7d7;
 	/*animation*/
 	transition-timing-function: all 2s ease 0.5s;
@@ -954,6 +954,12 @@ footer p {
 	transition: all ease 1s;
 }
 
+@media (max-width: 650px) {
+	.project-contents {
+		left: calc(100vw + 50rem);
+	}
+}
+
 	/* ++++++++++++Javacript Applied Classes+++*/
 	.pop-over-open-contents .project-contents {
 		left: 0rem;
@@ -962,6 +968,13 @@ footer p {
 .project-information {
 	max-width: 60rem;
 	margin-left: calc((100vw - 60rem) / 2);
+}
+
+@media (max-width: 650px) {
+	.project-information {
+		width: 100%;
+		margin-left: auto;
+	}
 }
 
 .project-information h1 {

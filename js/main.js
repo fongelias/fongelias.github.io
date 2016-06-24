@@ -104,8 +104,4 @@ $(document).ready(function(){
 		resetSideNav();
 	});
 
-	$(".pop-over").on("scroll", function() {
-		console.log('1');
-	});
-
 });

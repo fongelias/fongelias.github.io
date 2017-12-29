@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="post-header">
+		<div class="post-title-image" style="background-image: url(/img/posts/{{ page.image }})"></div>
+		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+		<div class="post-meta">
+			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+				{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+		        {{ page.date | date: date_format }}
+			</time>
+			<span class="post-tags">
+				{% for category in page.categories %}
+					<a href="/category/{{ category }}.html">{{ category | upcase }}</a>
+				{% endfor %}
+			</span>
+		</div>
+	</div>
+
+	<div class="post-content" itemprop="articleBody">
+		{{ content }}
+	</div>
+
+	<div id="related">
+	  <h2>Related Posts</h2>
+	  <ul class="posts">
+	    {% for post in site.related_posts limit:3 %}
+	      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</div>
+</article>
+<script>
+	//scrolls post past header
+	var headerheight = document.querySelector("#root header").scrollHeight;
+	document.querySelector("#root").scrollTo(0, headerheight);
+</script>

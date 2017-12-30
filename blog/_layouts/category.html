@@ -2,5 +2,6 @@
 layout: default
 ---
 <div class="category">
+	<h1>POSTS ON {{ page.category | upcase }}</h1>
 	{% include postlist.html category=page.category %}
 </div>

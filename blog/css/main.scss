@@ -3,6 +3,9 @@
 /*-- Variables --*/
 	/*-- Colors --*/
 	$charcoal: #292b2b;
+	$grey: #eee;
+	$pikachu: #ffd700;
+	$lightpika: #fef65b;
 	$air: #c0d6e4;
 	$water: #006ca9;
 	$deepBlue: #041541;
@@ -41,7 +44,7 @@ body {
 
 #root {
 	overflow: auto;
-	padding-bottom: 10px;
+	//padding-bottom: 10px;
 }
 
 /*-- Default --*/
@@ -56,6 +59,16 @@ header {
 	background-image: url("/img/{{ site.panoramaurl }}");
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	a {
+		color: $pikachu;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $lightpika;
+	}
 
 	.portrait {
 		background-image: url("/img/{{ site.portraiturl }}");
@@ -74,12 +87,111 @@ header {
 		color: white;
 		padding-left: 2em;
 	    padding-right: 2em;
+	    max-width: calc(100% - 180px);
 	}
 }
 
 @media (max-width: 800px) {
 	header {
 		@include flex-direction(column);
+
+		p {
+			max-width: none;
+		}
+	}
+}
+
+/*-- Category --*/
+.category {
+	h1 {
+		padding: 20px 20px 0px 20px;
+	}
+}
+
+/*-- About --*/
+.about-elias {
+	padding: 2em;
+
+	hr {
+		margin: 50px 0px;
+	}
+}
+
+/*-- Subscribe --*/
+.subscription-box {
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include align-items(center);
+	padding: 40px 0px 80px 0px;
+
+	.upper {
+		p {
+			font-size: 16px;
+			font-weight: 700;
+			color: $deepBlue;
+		}
+	}
+
+	.middle {
+		input {
+			height: 40px;
+			font-size: 18px;
+			font-weight: 600;
+			border: 0px;
+			background: $grey;
+			padding: 0px 10px;
+			border-radius: 2px;
+			outline: none;
+		}
+
+		input:focus {
+			background: white;
+		}
+
+		button {
+			height: 40px;
+			padding: 0px 30px;
+			border: 2px solid $grey;
+			border-radius: 2px;
+			font-size: 18px;
+			font-weight: 600;
+			outline: none;
+			@include transition(all 0.3s ease);
+		}
+
+		button:hover {
+			background-color: $charcoal;
+			border: 2px solid $charcoal;
+			color: white;
+		}
+
+		button:active {
+			background-color: $deepBlue;
+			border: 2px solid $deepBlue;
+			color: white;
+		}
+	}
+}
+
+@media(max-width: 660px) {
+	.subscription-box {
+		.middle {
+			form {
+				@include flexbox;
+				@include flex-direction(column);
+				@include justify-content(center);
+				@include align-items(center);
+
+				input {
+					margin: 5px;
+				}
+
+				button {
+					margin: 5px;
+				}
+			}
+		}
 	}
 }
 
@@ -134,8 +246,8 @@ header {
 					font-size: 30px;
 					color: $deepBlue;
 					border-bottom: 1px solid $air;
-					transition: background-position 0.15s linear 0.1s,box-shadow 0.15s linear 0s,color 0.15s linear 0s;
-					background-image: linear-gradient(to bottom,#eee 0%,#eee 100%);
+					transition: background-position 0.15s linear 0.1s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+					background-image: linear-gradient(to bottom, $grey 0%, $grey 100%);
 					background-size: 100%;
 					background-repeat: no-repeat;
 					background-position: 0 1.35em;
@@ -145,9 +257,28 @@ header {
 				a:hover {
 					color: $water;
 					//background-color: $air;
-					background-image: linear-gradient(to bottom,#eee 0%,#eee 100%);
+					background-image: linear-gradient(to bottom, $grey 0%, $grey 100%);
 				    background-position: 0 0;
 				    transition: background-position 0.1s linear 0s;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 750px) {
+	.post-list {
+		.post-link {
+			.lower {
+				@include flex-direction(column);
+
+				.post-link-image {
+					width: 100%;
+				}
+
+				.post-link-blurb {
+					width: 100%;
+					padding: 10px 0px 0px 0px;
 				}
 			}
 		}
@@ -170,6 +301,18 @@ header {
 		@include flex-direction(column);
 		@include justify-content(center);
 		@include align-items(center);
+
+		a {
+			font-weight: 700;
+			outline: none;
+			text-decoration: none;
+			color: $air;
+			@include transition(all 0.3s ease);
+		}
+
+		a:hover {
+			color: $water;
+		}
 	}
 
 	h1 {
@@ -183,7 +326,42 @@ header {
 		font-size: 22px;
 		padding-left: 2em;
 	    padding-right: 2em;
-	    line-height: 2.5;
+	    line-height: 2;
+	    margin: 60px 0px;
+	}
+
+	ol {
+		padding: 0em 6em;
+		font-size: 22px;
+		font-weight: 600;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+@media(min-width: 1030px) {
+	.post {
+		h1 {
+			padding-left: calc((100% - 945px) / 2);
+		    padding-right: calc((100% - 945px) / 2);
+		}
+
+		p {
+			padding-left: calc((100% - 945px) / 2);
+		    padding-right: calc((100% - 945px) / 2);
+		}
+
+		ol {
+			padding-left: calc((100% - 845px) / 2);
+		    padding-right: calc((100% - 845px) / 2);
+		}
+
+		img {
+			padding-left: calc((100% - 945px) / 2);
+		    padding-right: calc((100% - 945px) / 2);
+		}
 	}
 }
 

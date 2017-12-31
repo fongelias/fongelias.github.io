@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Designing a Personal Site | Elias Fong</title>
+		<link rel="stylesheet" href="/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+		<meta name="description" content="How I designed my personal site (this one) by asking myself a simple design question: what are the use cases? By defining functionality first, form comes easily.">
+	</head>
+	<body>
+		<div id="root">
+			<header>
+				<div class="portrait"></div>
+				<p>I'm <a href="/about/">Elias</a>, a developer based out of Boston, working as a software engineer at Symantec. You can find my projects on <a href="https://github.com/fongelias" target="_blank">github</a>, follow me on <a href="https://www.instagram.com/fongelias/" target="_blank">instagram</a>, or read <a href="/">my posts</a></p>
+			</header>
+			<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="post-header">
+		<div class="post-title-image" style="background-image: url(/img/posts/mirimar.jpg)"></div>
+		<h1 class="post-title" itemprop="name headline">Designing a Personal Site</h1>
+		<div class="post-meta">
+			<time datetime="2017-12-31T16:49:29-05:00" itemprop="datePublished">
+				
+		        Dec 31, 2017
+			</time>
+			<span class="post-tags">
+				
+					<a href="/category/tutorials">TUTORIALS</a>
+				
+					<a href="/category/design">DESIGN</a>
+				
+			</span>
+		</div>
+	</div>
+
+	<div class="post-content" itemprop="articleBody">
+		<p>When I first started working on this site, I found the first steps of the process very difficult. How do you reduce yourself into a few words and a layout? How do you express who you are without being self-centered?</p>
+
+<p>Luckily, there are a lot of established design processes for these types of problems. The first is <strong>defining use cases</strong>. Simply put, <em>how do I want my site to be used</em>?</p>
+
+<p>I was mainly focused on a few cases:</p>
+<ol>
+  <li>visitors can find links to my projects/media</li>
+  <li>visitors can see my face (somewhere)</li>
+  <li>visitors can read about my ideas</li>
+</ol>
+
+<p>With these priorities in mind, I started thinking about what I want my first impression to be, and ended up with this:</p>
+
+<p><img src="/img/posts/original-site-banner.png" alt="current banner" /></p>
+
+<p>This came from a variety of motivations. First, I wanted to have a <em>picture of my face</em>, in order to <strong>keep things personal</strong>:</p>
+
+<p><img src="/img/eliasInTheSun.jpg" alt="old picture of me" /></p>
+
+<p>This one is from a <em>long time ago</em> (don’t judge), but I really like the colors in it.</p>
+
+<p>To <em>explain a bit about who I am</em>, I added the <strong>little blurb</strong>, which conveniently <strong>links</strong> to a lot of <em>ME things</em> (like my github and instagram):</p>
+
+<p><img src="/img/posts/original-site-banner-blurb.png" alt="site banner blurb" /></p>
+
+<p>it also has a <em>link to my posts</em>, which are just posted below it on the home page. I chose to make it a blog because it would <strong>allow the site to evolve as I learn/consume new things</strong> (okay, also because I wanted to blog).</p>
+
+<p>The background is a picture I took on a trip in Italy that I tinted down to make the blurb easier to read. There’s a <strong>trend</strong> in visual design centered around using more <em>large images</em>, and its valuable to <strong>share a visual language with your peers</strong>, in order to <strong>stay current</strong>.</p>
+
+<p>All together, it looks like this:</p>
+
+<p><img src="/img/posts/original-site-banner.png" alt="site banner background" /></p>
+
+<p>That covers the first two things: having links to my projects, and a picture of my face.</p>
+
+<p>Great! Now for expressing my ideas in blog form. What are the use cases here?</p>
+
+<ol>
+  <li>visitors can find the posts on google</li>
+  <li>visitors can browse a list of posts</li>
+</ol>
+
+<p>Because I plan to write about a variety of topics,</p>
+
+<ol>
+  <li>visitors can browse a list of posts with a certain topic</li>
+</ol>
+
+<p>And because of my goal of expanding my online presence</p>
+
+<ol>
+  <li>visitors can subscribe to my blog</li>
+</ol>
+
+<p><strong>I’ll write more about SEO</strong> and <strong>building a blog with jekyll</strong> in a later post, and for now, we’ll <em>focus on design</em>. Let’s start with the list of posts:</p>
+
+<p><img src="/img/posts/post-link-image.png" alt="post entry" /></p>
+
+<p>I decided to have the list of posts on the home page, so that visitors can get straight to the content.</p>
+
+<p>Each post has an image (for visual engagement), and a title/description to show the content. I also added tags so that the user can navigate to similar posts.</p>
+
+<p><img src="/img/posts/subscription-box.png" alt="subscription box" /></p>
+
+<p>I also added a subscription widget at the bottom of every page, so that I can grow a base of readers. I’m using <strong>mailchimp to manage the subscription</strong>, which I’ll cover in a later post.</p>
+
+<p>And altogether, I have a personal site that includes a blog and covers the following use cases:</p>
+
+<ol>
+  <li>visitors can find links to my projects/media</li>
+  <li>visitors can see my face (somewhere)</li>
+  <li>visitors can read about my ideas</li>
+  <li>visitors can browse a list of posts</li>
+  <li>visitors can browse a list of posts with a certain topic</li>
+  <li>visitors can subscribe to my blog</li>
+</ol>
+
+
+	</div>
+
+	<!--div id="related">
+	  <h2>Related Posts</h2>
+	  <ul class="posts">
+	    
+	      <li><span>01 Jan 2017</span> &raquo; <a href="/film/media/philosophy/2017/01/01/things-to-come">Existential Loneliness in <em>L'Avenir</em></a></li>
+	    
+	  </ul>
+	</div-->
+</article>
+<script>
+	//scrolls post past header
+	var headerheight = document.querySelector("#root header").scrollHeight;
+	document.querySelector("#root").scrollTo(0, headerheight);
+</script>
+
+			<footer>
+				<div class="subscription-box">
+	<div class="upper">
+		<p>GET AN EMAIL WHEN I WRITE A NEW POST</p>
+	</div>
+	<div class="middle">
+		<form action="https://gmail.us12.list-manage.com/subscribe/post?u=2ca3d2258c4b75ee21a16b467&amp;id=7e310cbde1" method="POST" target="_blank">
+			<input type="text" name="FNAME" id="mce-FNAME" placeholder="FIRST NAME"/>
+			<input type="text" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL"/>
+			<input type="hidden" name="ml-submit" value="1"/>
+			<button>SUBSCRIBE</button>
+		</form>
+	</div>
+	<div class="lower">
+		<p class="rss-subscribe">or subscribe <a href="/feed.xml">via RSS</a></p>
+	</div>
+</div>
+
+			</footer>
+		</div>
+	</body>
+</html>

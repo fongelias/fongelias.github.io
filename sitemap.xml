@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://fongelias.github.io/</loc>
+  <lastmod>2018-01-03T19:05:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/about</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/books</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/media</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/philosophy</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/books/media/philosophy/2018/01/03/Call-Me-By-Your-Name-The-Beauty-of-Vulnerability</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/tutorials</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/tutorials/2018/01/02/How-do-I-increase-my-SEO</loc>
+  <lastmod>2018-01-03T19:05:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/film</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/film/media/philosophy/2017/12/31/things-to-come</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/design</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/tutorials/design/2017/12/31/designing-a-personal-site</loc>
+  <lastmod>2018-01-03T19:05:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/tutorials.html</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://fongelias.github.io/category/media.html</loc>
+  <lastmod>2018-01-03T19:05:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>

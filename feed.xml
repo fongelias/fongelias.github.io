@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-02T08:34:05-05:00</updated><id>http://localhost:4000/</id><title type="html">Elias Fong</title><subtitle>Personal site of a Elias Fong, a developer based out of Boston,  containing tutorials, reviews, and other posts.</subtitle><entry><title type="html">Existential Loneliness in L’Avenir</title><link href="http://localhost:4000/film/media/philosophy/2017/12/31/things-to-come" rel="alternate" type="text/html" title="Existential Loneliness in &lt;em&gt;L'Avenir&lt;/em&gt;" /><published>2017-12-31T17:42:29-05:00</published><updated>2017-12-31T17:42:29-05:00</updated><id>http://localhost:4000/film/media/philosophy/2017/12/31/things-to-come</id><content type="html" xml:base="http://localhost:4000/film/media/philosophy/2017/12/31/things-to-come">&lt;p&gt;Nathalie, played by Isabelle Huppert, sits in the darkness inside a ferry with the white noise of the sea filling the space around her. Her children can be seen through a window, in light, outside. When her husband knocks on the glass, asking her to join them, the camera pans in to an essay she is grading, titled &lt;em&gt;“Peut-on se mettre à la place de l’autre”&lt;/em&gt;, which means: &lt;em&gt;Can we put ourselves in the place of the other&lt;/em&gt;?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-02T22:41:07-05:00</updated><id>http://localhost:4000/</id><title type="html">Elias Fong</title><subtitle>Personal site of a Elias Fong, a developer based out of Boston,  containing tutorials, reviews, and other posts.</subtitle><entry><title type="html">What, Why, and How of SEO</title><link href="http://localhost:4000/tutorials/2018/01/02/How-do-I-increase-my-SEO" rel="alternate" type="text/html" title="What, Why, and How of SEO" /><published>2018-01-02T12:00:00-05:00</published><updated>2018-01-02T12:00:00-05:00</updated><id>http://localhost:4000/tutorials/2018/01/02/How-do-I-increase-my-SEO</id><content type="html" xml:base="http://localhost:4000/tutorials/2018/01/02/How-do-I-increase-my-SEO">&lt;p&gt;What is SEO? SEO stands for “Search Engine Optimization”, and refers to the ways that people improve their visibility on search engine results (like Google Search). This is important for help people find your site.&lt;/p&gt;
+
+&lt;p&gt;In order to increase your visibility on search engines, you should first understand how search engines work. Sites like Google &lt;em&gt;crawl&lt;/em&gt; through the world wide web and &lt;em&gt;index&lt;/em&gt; websites, and in this process, they create lists of sites that they think are most relevant to different searches.&lt;/p&gt;
+
+&lt;p&gt;These lists are ranked in both relevance and popularity, and involve many &lt;a href=&quot;https://moz.com/search-ranking-factors&quot;&gt;different factors&lt;/a&gt; to determine the rank.&lt;/p&gt;
+
+&lt;p&gt;For popularity, you should think about the ways that people interact with your site:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Are they looking for something?&lt;/li&gt;
+  &lt;li&gt;Are they trying to perform an action?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And make sure that your site contains keywords that indicate how your site is related to what your user is looking for.&lt;/p&gt;
+
+&lt;p&gt;Also, remember that while you can make flashy statements with an image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/SEO-statement.png&quot; alt=&quot;SEO statement that web crawlers can't see&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;the web crawlers used by search engines can’t read it (yet).&lt;/p&gt;
+
+&lt;p&gt;In fact, you should also think about the things that help web crawlers read your site, such as:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;alt text for images&lt;/li&gt;
+  &lt;li&gt;supplemental text&lt;/li&gt;
+  &lt;li&gt;transcripts for videos&lt;/li&gt;
+  &lt;li&gt;meta tags&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Meta tags are particularly important for SEO, as they also give you control over how search engines and social media interprets your site.&lt;/p&gt;
+
+&lt;p&gt;For example, Google reads your title and description tags, as well as &lt;a href=&quot;https://developers.google.com/search/docs/guides/intro-structured-data&quot;&gt;structured JSON&lt;/a&gt; to generate the search results that they list:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/SEO-google.png&quot; alt=&quot;image of a google search&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and Facebook uses &lt;a href=&quot;http://ogp.me/&quot;&gt;open graph tags&lt;/a&gt; (denoted by property names starting with “og:”) to build the link that they show when people share a url:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/SEO-facebook.png&quot; alt=&quot;image of a facebook share&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(this picture actually shows how I didn’t use enough tags: if I added an og:image tag, the link would show an image that would make it looke a lot prettier)&lt;/p&gt;
+
+&lt;p&gt;Finally, there are Twitter tags (which I will not cover in this post since I think Twitter is dying). Twitter also uses some of the same open graph tags as Facebook, so if you prioritize facebook, you’ll get the biggest impact out of your effort.&lt;/p&gt;
+
+&lt;p&gt;This is just the tip of the iceberg- there are whole disciplines based on keyword optimization and web-crawler friendly design.&lt;/p&gt;
+
+&lt;p&gt;I will leave you with this, however: all the knowledge we’ve acquired about SEO comes from a cycle of testing and measuring results. Optimization is a process, one that requires you to gather data, analyze it, and act on it. The first step? Start using something like &lt;a href=&quot;https://www.google.com/analytics/&quot;&gt;google analytics&lt;/a&gt; to start understanding your users.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is SEO? SEO stands for “Search Engine Optimization”, and refers to the ways that people improve their visibility on search engine results (like Google Search). This is important for help people find your site.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/posts/SEO.png" /></entry><entry><title type="html">Existential Loneliness in L’Avenir</title><link href="http://localhost:4000/film/media/philosophy/2017/12/31/things-to-come" rel="alternate" type="text/html" title="Existential Loneliness in &lt;em&gt;L'Avenir&lt;/em&gt;" /><published>2017-12-31T17:42:29-05:00</published><updated>2017-12-31T17:42:29-05:00</updated><id>http://localhost:4000/film/media/philosophy/2017/12/31/things-to-come</id><content type="html" xml:base="http://localhost:4000/film/media/philosophy/2017/12/31/things-to-come">&lt;p&gt;&lt;em&gt;Spoiler Alert: This post is about the movie L’Avenir (Things To Come), and contains some important plot points&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Nathalie, played by Isabelle Huppert, sits in the darkness inside a ferry with the white noise of the sea filling the space around her. Her children can be seen through a window, in light, outside. When her husband knocks on the glass, asking her to join them, the camera pans in to an essay she is grading, titled &lt;em&gt;“Peut-on se mettre à la place de l’autre”&lt;/em&gt;, which means: &lt;em&gt;Can we put ourselves in the place of the other&lt;/em&gt;?&lt;/p&gt;
 
 &lt;p&gt;They arrive at an island, where they visit the resting place of Chateaubriand, a great writer. Together, they observe the grave, a stone cross that faces the sea. One by one, they leave until only Heinz- the father- is left, staring into the horizon. It is then that the title “L’Avenir” appears.&lt;/p&gt;
 
@@ -26,7 +72,7 @@
 
 &lt;p&gt;There is redemption for Nathalie at the end of the film, symbolized by Fabien’s adoption of her cat- an indication of her willingness to let go. We find her among her children, and her daughter Chloe’s growing family, where she lovingly cares for her new grandchild, and as the camera pans away from her, she croons &lt;em&gt;“À la claire fontaine”&lt;/em&gt; in a room that feels warm, comforting, and filled with love.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/thingsToComeCredits.png&quot; alt=&quot;Nathalie walking on the hills&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Nathalie, played by Isabelle Huppert, sits in the darkness inside a ferry with the white noise of the sea filling the space around her. Her children can be seen through a window, in light, outside. When her husband knocks on the glass, asking her to join them, the camera pans in to an essay she is grading, titled “Peut-on se mettre à la place de l’autre”, which means: Can we put ourselves in the place of the other?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/thingsToCome.png" /></entry><entry><title type="html">Designing a Personal Site</title><link href="http://localhost:4000/tutorials/design/2017/12/31/designing-a-personal-site" rel="alternate" type="text/html" title="Designing a Personal Site" /><published>2017-12-31T16:49:29-05:00</published><updated>2017-12-31T16:49:29-05:00</updated><id>http://localhost:4000/tutorials/design/2017/12/31/designing-a-personal-site</id><content type="html" xml:base="http://localhost:4000/tutorials/design/2017/12/31/designing-a-personal-site">&lt;p&gt;When I first started working on this site, I found the first steps of the process very difficult. How do you reduce yourself into a few words and a layout? How do you express who you are without being self-centered?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/posts/thingsToComeCredits.png&quot; alt=&quot;Nathalie walking on the hills&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Spoiler Alert: This post is about the movie L’Avenir (Things To Come), and contains some important plot points</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/posts/thingsToCome.png" /></entry><entry><title type="html">Designing a Personal Site</title><link href="http://localhost:4000/tutorials/design/2017/12/31/designing-a-personal-site" rel="alternate" type="text/html" title="Designing a Personal Site" /><published>2017-12-31T16:49:29-05:00</published><updated>2017-12-31T16:49:29-05:00</updated><id>http://localhost:4000/tutorials/design/2017/12/31/designing-a-personal-site</id><content type="html" xml:base="http://localhost:4000/tutorials/design/2017/12/31/designing-a-personal-site">&lt;p&gt;When I first started working on this site, I found the first steps of the process very difficult. How do you reduce yourself into a few words and a layout? How do you express who you are without being self-centered?&lt;/p&gt;
 
 &lt;p&gt;Luckily, there are a lot of established design processes for these types of problems. The first is &lt;strong&gt;defining use cases&lt;/strong&gt;. Simply put, &lt;em&gt;how do I want my site to be used&lt;/em&gt;?&lt;/p&gt;
 
@@ -101,54 +147,4 @@
   &lt;li&gt;visitors can browse a list of posts&lt;/li&gt;
   &lt;li&gt;visitors can browse a list of posts with a certain topic&lt;/li&gt;
   &lt;li&gt;visitors can subscribe to my blog&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">When I first started working on this site, I found the first steps of the process very difficult. How do you reduce yourself into a few words and a layout? How do you express who you are without being self-centered?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/mirimar.jpg" /></entry><entry><title type="html">Call Me By Your Name - The Beauty of Vulnerability</title><link href="http://localhost:4000/books/media/philosophy/2017/01/03/Call-Me-By-Your-Name-The-Beauty-of-Vulnerability" rel="alternate" type="text/html" title="Call Me By Your Name - The Beauty of Vulnerability" /><published>2017-01-03T12:00:00-05:00</published><updated>2017-01-03T12:00:00-05:00</updated><id>http://localhost:4000/books/media/philosophy/2017/01/03/Call%20Me%20By%20Your%20Name%20-%20The%20Beauty%20of%20Vulnerability</id><content type="html" xml:base="http://localhost:4000/books/media/philosophy/2017/01/03/Call-Me-By-Your-Name-The-Beauty-of-Vulnerability">&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“We rip out so much of ourselves to be cured of things faster than we should that we go bankrupt by the age of thirty and have less to offer each time we start with someone new. But to feel nothing so as not to feel anything - what a waste!”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;These are the words that Mr.Perlman- Elio’s father- chooses to tell Elio on the day that Oliver leaves for America. Elio, heartbroken and- as I would imagine- confused, returns from Rome to his home on the countryside at the end of a summer-long affair. The wounds are still fresh, and he is making sense of the monumental events that have occured over the past few weeks.&lt;/p&gt;
-
-&lt;p&gt;When his father reveals that he knew about the secret relationship between Elio and Oliver, Elio can only expect the unfortunately common reaction to homosexuality. Instead, his father shows him a boundless tenderness, reminds him that the pain was a remnant of a beautiful experience, and advises him not to let his heart grow tough.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“If there is pain, nurse it, and if there is a flame, don’t snuff it out, don’t be brutal with it. Withdrawal can be a terrible thing when it keeps us awake at night, and watching others forget us sooner than we’d want to be forgotten is no better”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/callMeByYourNameCouch.png&quot; alt=&quot;Elio and Mr.Perlman on a couch&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;From what I have seen in culture today, vulnerability is thought of as only a weakness, rather than a tradeoff. “Having it all” means feeling all the good without any of the consequences, so when people are physically intimate, they try to keep an emotional distance. But how can we do things that matter, when we don’t allow anything to matter to us?&lt;/p&gt;
-
-&lt;p&gt;This is by no means a condemnation of those who try to remain aloof in any kind of relationship. However, why would you deny yourself the intimacy of a connection with others? This pain is only in the heart, after all, and like all other pain, it is a reminder that you have- and can still- feel.&lt;/p&gt;
-
-&lt;p&gt;Vulnerability is the consequence of allowing things and people to matter to you. In any meaningful connection, you must accept the fact that you can feel pain and pleasure from the action or inaction of others. Just like anything else that is a part of you- a limb, for example- its removal will cause you pain. Your only choice is whether or not to allow something to matter so much.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/callMeByYourNameCar.png&quot; alt=&quot;Elio and his mother driving home from the train station&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In his later years, when Elio visits Oliver, he tells him over drinks that:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“You are the only person I’d like to say goodbye to when I die, because only then will this thing I call my life make any sense. And if I should hear that you died, my life as I know it, the me who is speaking with you now, will cease to exist.”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There is a part of him that he still views in the context of Oliver in a way that is more significant than memories of a summer gone by. Something grew from those shared experiences: a part of him that influences how he acts, one that occasionally hurts from nostalgia.&lt;/p&gt;
-
-&lt;p&gt;At the same time, he also speaks of people that came after Oliver as other monumental figures in his life:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Many helped me part life into Before X and After X segments, many brought joy and sorrow, many threw my life off course, while others made no difference whatsoever, so that Oliver, who for so long had loomed like a fulcrum on the scale of life, eventually acquired successors who either eclipsed him or reduced him to an early signpost, a minor fork in the road, a small, fiery Mercury on a voyage out to Pluto and beyond. Fancy this, I might say: at the time I knew Oliver, I still hadn’t met so-and-so. Yet life without so-and-so was simply unthinkable.”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Because he didn’t allow his tulmultuous relationship to wound him in such a way that he did not recover, he was able to open his heart to others, while still keeping his tenderness for Oliver. And over time, the pain grew smaller and smaller, while the love stayed the same.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/callMeByYourNameHall.png&quot; alt=&quot;Elio and Oliver in the hall&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I read this book (twice) the month after the end of a two year long relationship- one that changed a lot about who I am, and holds a special place in my heart.&lt;/p&gt;
-
-&lt;p&gt;After reading this, I started to see the chasm that had opened up in my life as more of a wrinkle- not in regards to the magnitude of it, but to my relationship with it. It was a reminder, now, of my ability to love and to receive love.&lt;/p&gt;
-
-&lt;p&gt;When I closed the cover on this novel for the second time, I walked away with an aspiration to keep my heart open to the world, and exemplify the kind of love that is found in “Call Me By Your Name”:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Amor ch’a null’amato amar perdona. Love, which exempts no one who’s loved from loving”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/callMeByYourNameBed.png&quot; alt=&quot;Elio and Oliver in bed&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">“We rip out so much of ourselves to be cured of things faster than we should that we go bankrupt by the age of thirty and have less to offer each time we start with someone new. But to feel nothing so as not to feel anything - what a waste!”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/callMeByYourName.png" /></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">When I first started working on this site, I found the first steps of the process very difficult. How do you reduce yourself into a few words and a layout? How do you express who you are without being self-centered?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/posts/mirimar.jpg" /></entry></feed>

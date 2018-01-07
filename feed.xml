@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-05T18:57:16-05:00</updated><id>http://localhost:4000/</id><title type="html">Elias Fong</title><subtitle>Personal site of a Elias Fong, a developer based out of Boston,  containing tutorials, reviews, and other posts.</subtitle><entry><title type="html">Plato’s Epistemology and Learning from Beauty</title><link href="http://localhost:4000/philosophy/2018/01/04/Platos-epistemology-and-learning-from-beauty" rel="alternate" type="text/html" title="Plato's Epistemology and Learning from Beauty" /><published>2018-01-04T13:00:00-05:00</published><updated>2018-01-04T13:00:00-05:00</updated><id>http://localhost:4000/philosophy/2018/01/04/Platos-epistemology-and-learning-from-beauty</id><content type="html" xml:base="http://localhost:4000/philosophy/2018/01/04/Platos-epistemology-and-learning-from-beauty">&lt;p&gt;Why do we enjoy beauty? And what makes beautiful qualities beautiful? When I look at the painting above- Monet’s &lt;em&gt;Soleil Levant&lt;/em&gt;- I justify that the beauty here is in the stark contrast of color and the gentleness of the brush strokes. His impression of the sunrise feels honest, and I can empathize with it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-07T14:09:35-05:00</updated><id>http://localhost:4000/</id><title type="html">Elias Fong</title><subtitle>Personal site of a Elias Fong, a developer based out of Boston,  containing tutorials, reviews, and other posts.</subtitle><entry><title type="html">Learning SEO: Moving up my page rank - part 1</title><link href="http://localhost:4000/tutorials/2018/01/07/How-do-I-increase-my-SEO-copy" rel="alternate" type="text/html" title="Learning SEO: Moving up my page rank - part 1" /><published>2018-01-07T02:00:00-05:00</published><updated>2018-01-07T02:00:00-05:00</updated><id>http://localhost:4000/tutorials/2018/01/07/How-do-I-increase-my-SEO%20copy</id><content type="html" xml:base="http://localhost:4000/tutorials/2018/01/07/How-do-I-increase-my-SEO-copy">&lt;p&gt;Since my last post on SEO, I was able to make (relatively) significant progress with my SEO. Here, I want to talk about the &lt;strong&gt;progress&lt;/strong&gt; I’ve made, &lt;strong&gt;how I made the progress&lt;/strong&gt;, and &lt;strong&gt;next steps&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;progress&quot;&gt;Progress&lt;/h2&gt;
+&lt;p&gt;Since the start of my blog, I’ve been able to ramp up my viewership from &lt;strong&gt;0 users to 131 unique users&lt;/strong&gt;. These are not recurring visitors, which is what I eventually want, but they are visitors just the same.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleAnalytics-Overview.png&quot; alt=&quot;Google Analytics Overview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll see that there is a &lt;strong&gt;very high bounce rate&lt;/strong&gt;. We’ll discuss this in the next steps portion.&lt;/p&gt;
+
+&lt;p&gt;More importantly, I was able to increase my page rank in searches for my full name. This means that when people look up “Elias Fong” on google, they are more likely to see this site as a result.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleSearchByName.png&quot; alt=&quot;Google Search for Elias Fong&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I re-created the site for this URL (it was just a portfolio site in the past), the search result for this site was on the third page of results. We’ll discuss keyword optimization in a the next steps portion as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-i-made-the-progress&quot;&gt;How I made the progress&lt;/h2&gt;
+&lt;p&gt;Let’s start with viewership. This part is a less impressive (to me) than my progress on page rankings, simply because I know the effort it took to reach this level of views.&lt;/p&gt;
+
+&lt;p&gt;On Google analytics, there is a nifty widget that shows the pages that people visited:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleAnalytics-PageViews.png&quot; alt=&quot;Google Analytics Page Views&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll notice that there is a large number of views for one page, and a lot less for the others.&lt;/p&gt;
+
+&lt;p&gt;The page with the most views is my post on &lt;em&gt;Call Me By Your Name&lt;/em&gt;. At the time that I’m writing this, Call Me By Your Name is getting a lot of Oscars hype as a movie, and there is even a &lt;a href=&quot;https://www.reddit.com/r/callmebyyourname/&quot;&gt;Reddit community&lt;/a&gt; around the movie.&lt;/p&gt;
+
+&lt;p&gt;I posted a link to the post in the reddit community, as well as on my facebook, and this is the traffic that I got from it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleAnalytics-Channels.png&quot; alt=&quot;Google Analytics Sources&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The third is when the post went public, and the second was a private release to my friends to proofreed the post. You can see that the majority of the visits come from reddit.&lt;/p&gt;
+
+&lt;p&gt;Over time, the viewership drops as the post gets older. I was unable to find other channels to publicize my post, so the only thing I did was reach out to communities that might have interest in it.&lt;/p&gt;
+
+&lt;p&gt;For my &lt;strong&gt;page rank&lt;/strong&gt;, it is very important to note that the increase in rank is in searches for “Elias Fong”. I have not done any other tests yet, but ideally, I want to target certain keywords and increase my page rank on those searches.&lt;/p&gt;
+
+&lt;p&gt;However, it is a good proof of concept for myself, and I was able to do that through &lt;em&gt;communication with Google&lt;/em&gt;. This means that I added meta tags and structured json to my page to make it easier for Google to understand what it was about, added a link to my site in all my social media to increase the number of inbound links to my site, and submitted a sitemap to Google Webmaster Tools to make it easier for Google to index my site.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;Above, I noted several things that need improvement:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I have a high bounce rate&lt;/li&gt;
+  &lt;li&gt;Page rank in other keyword searches&lt;/li&gt;
+  &lt;li&gt;Recurring viewership&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since I haven’t defined it in a previous post, the bounce rate refers to the portion of people that view one page in your site, and leave without viewing any other pages.&lt;/p&gt;
+
+&lt;p&gt;Because the majority of my views are from my &lt;em&gt;Call Me By Your Name&lt;/em&gt; post, it makes sense to me that viewers read the post and left right after. That being said, we may be able to improve this by adding a list of related posts to the end of each post, so that users are more likely to view another page.&lt;/p&gt;
+
+&lt;p&gt;Having a lower bounce rate may help with maintaning a recurring viewership. If users feel like they like a significant amount of your content (and not just one page), they are probably more likely to come back.&lt;/p&gt;
+
+&lt;p&gt;For page rank in other keyword searches, an important thing to think about is what keywords I want to target. Are there specific people I want to see my blog? By determining who I want to find my blog, I can think about the ways they would search for what they might find on my blog, and use wording that is more relevant to those searches in my page content.&lt;/p&gt;
+
+&lt;p&gt;Finally for recurring viewership, I need to develop consistency in my blog. I need to have a significant amount of content around similar topics, so that a particular user will find multiple things that they want to read on my site, as well as have a reasonable expectation that I will post more similar content. Part of this will be me, following my SEO, and the other part will be showing my new content consistently to specific channels.&lt;/p&gt;</content><author><name></name></author><summary type="html">Since my last post on SEO, I was able to make (relatively) significant progress with my SEO. Here, I want to talk about the progress I’ve made, how I made the progress, and next steps.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/posts/01-07-GoogleAnalytics-Channels.png" /></entry><entry><title type="html">Plato’s Epistemology and Learning from Beauty</title><link href="http://localhost:4000/philosophy/2018/01/04/Platos-epistemology-and-learning-from-beauty" rel="alternate" type="text/html" title="Plato's Epistemology and Learning from Beauty" /><published>2018-01-04T13:00:00-05:00</published><updated>2018-01-04T13:00:00-05:00</updated><id>http://localhost:4000/philosophy/2018/01/04/Platos-epistemology-and-learning-from-beauty</id><content type="html" xml:base="http://localhost:4000/philosophy/2018/01/04/Platos-epistemology-and-learning-from-beauty">&lt;p&gt;Why do we enjoy beauty? And what makes beautiful qualities beautiful? When I look at the painting above- Monet’s &lt;em&gt;Soleil Levant&lt;/em&gt;- I justify that the beauty here is in the stark contrast of color and the gentleness of the brush strokes. His impression of the sunrise feels honest, and I can empathize with it.&lt;/p&gt;
 
 &lt;p&gt;However, my explanation does not quite answer why the painting is beautiful. My answer is subjective- I am only saying that the painting is beautiful because of the things I find beautiful about it. Contrast, color, gentleness and honesty- those are the things that I see in the painting, and those are the true subjects of my admiration.&lt;/p&gt;
 

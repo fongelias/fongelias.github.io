@@ -377,13 +377,18 @@ header {
   font-size: 45px;
   padding-left: 2em;
   padding-right: 2em; }
+.post h2 {
+  text-align: center;
+  font-size: 24px;
+  padding-left: 2em;
+  padding-right: 2em; }
 .post p {
   font-size: 20px;
   padding-left: 2em;
   padding-right: 2em;
   line-height: 2;
   margin: 60px 0px; }
-.post ol {
+.post ol, .post ul {
   padding: 0em 6em;
   font-size: 22px;
   font-weight: 600; }

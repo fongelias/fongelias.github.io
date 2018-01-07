@@ -396,13 +396,13 @@ header {
   width: 100%; }
 
 @media (min-width: 1030px) {
-  .post h1 {
+  .post h1, .post h2 {
     padding-left: calc((100% - 845px) / 2);
     padding-right: calc((100% - 845px) / 2); }
   .post p {
     padding-left: calc((100% - 845px) / 2);
     padding-right: calc((100% - 845px) / 2); }
-  .post ol {
+  .post ol, .post ul {
     padding-left: calc((100% - 745px) / 2);
     padding-right: calc((100% - 745px) / 2); }
   .post img {

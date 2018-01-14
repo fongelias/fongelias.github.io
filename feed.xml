@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-10T11:05:19-05:00</updated><id>http://localhost:4000/</id><title type="html">Elias Fong</title><subtitle>Personal site of a Elias Fong, a developer based out of Boston,  containing tutorials, reviews, and other posts.</subtitle><entry><title type="html">Columbus: What happens when you meet your reflection?</title><link href="http://localhost:4000/film/media/philosophy/2018/01/10/Columbus-What-Happens-When-You-Meet-Your-Reflection" rel="alternate" type="text/html" title="Columbus: What happens when you meet your reflection?" /><published>2018-01-10T08:00:00-05:00</published><updated>2018-01-10T08:00:00-05:00</updated><id>http://localhost:4000/film/media/philosophy/2018/01/10/Columbus-What-Happens-When-You-Meet-Your-Reflection</id><content type="html" xml:base="http://localhost:4000/film/media/philosophy/2018/01/10/Columbus-What-Happens-When-You-Meet-Your-Reflection">&lt;p&gt;&lt;em&gt;Spoiler Alert: this post is about the film Columbus, and contains important plot points from it.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-14T12:45:32-05:00</updated><id>http://localhost:4000/</id><title type="html">Elias Fong</title><subtitle>Personal site of a Elias Fong, a developer based out of Boston,  containing tutorials, reviews, and other posts.</subtitle><entry><title type="html">Columbus: What happens when you meet your reflection?</title><link href="http://localhost:4000/film/media/philosophy/2018/01/10/Columbus-What-Happens-When-You-Meet-Your-Reflection" rel="alternate" type="text/html" title="Columbus: What happens when you meet your reflection?" /><published>2018-01-10T08:00:00-05:00</published><updated>2018-01-10T08:00:00-05:00</updated><id>http://localhost:4000/film/media/philosophy/2018/01/10/Columbus-What-Happens-When-You-Meet-Your-Reflection</id><content type="html" xml:base="http://localhost:4000/film/media/philosophy/2018/01/10/Columbus-What-Happens-When-You-Meet-Your-Reflection">&lt;p&gt;&lt;em&gt;Spoiler Alert: this post is about the film Columbus, and contains important plot points from it.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;There is a famous black-and-white optical illusion called Rubin’s vase, where the subject changes from a white vase to the shadows of lovers when you choose to focus on the darkness. This phenomenon, called multistable perception, involves mutually exclusive perspectives that are unified in a single image. In &lt;em&gt;Columbus&lt;/em&gt;, a place where people are seen in reflections and through mirrors, this duality can be seen in everything.&lt;/p&gt;
 
@@ -45,13 +45,13 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleAnalytics-Overview.png&quot; alt=&quot;Google Analytics Overview&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You’ll see that there is a &lt;strong&gt;very high bounce rate&lt;/strong&gt;. We’ll discuss this in the next steps portion.&lt;/p&gt;
+&lt;p&gt;You’ll see that there is a &lt;strong&gt;very high bounce rate&lt;/strong&gt;. We’ll discuss this in a next steps portion.&lt;/p&gt;
 
-&lt;p&gt;More importantly, I was able to increase my page rank in searches for my full name. This means that when people look up “Elias Fong” on google, they are more likely to see this site as a result.&lt;/p&gt;
+&lt;p&gt;More importantly, I was able to increase my page rank in searches for my full name. This means that when people look up “Elias Fong” on Google, they are more likely to see this site as a result.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleSearchByName.png&quot; alt=&quot;Google Search for Elias Fong&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Before I re-created the site for this URL (it was just a portfolio site in the past), the search result for this site was on the third page of results. We’ll discuss keyword optimization in a the next steps portion as well.&lt;/p&gt;
+&lt;p&gt;Before I re-created the site for this URL (it was just a portfolio site in the past), the search result for this site was on the third page of results. We’ll discuss keyword optimization in a &lt;em&gt;next steps&lt;/em&gt; portion as well.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-i-made-the-progress&quot;&gt;How I made the progress&lt;/h2&gt;
 &lt;p&gt;Let’s start with viewership. This part is a less impressive (to me) than my progress on page rankings, simply because I know the effort it took to reach this level of views.&lt;/p&gt;
@@ -68,7 +68,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/01-07-GoogleAnalytics-Channels.png&quot; alt=&quot;Google Analytics Sources&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The third is when the post went public, and the second was a private release to my friends to proofreed the post. You can see that the majority of the visits come from reddit.&lt;/p&gt;
+&lt;p&gt;The third is when the post went public, and the second was a private release to my friends to proofread the post. You can see that the majority of the visits come from reddit.&lt;/p&gt;
 
 &lt;p&gt;Over time, the viewership drops as the post gets older. I was unable to find other channels to publicize my post, so the only thing I did was reach out to communities that might have interest in it.&lt;/p&gt;
 
